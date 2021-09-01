@@ -1,18 +1,16 @@
 @import '_setup';
+@import '_stylingTypography';
+@import '_stylingGeneral';
 @import '_vars';
+@import '_mixins.scss';
 
 
-@mixin fontSize($sizeValue) {
-    font-size: $sizeValue;
-    color: blue;
-    font-weight: bold;
-}
+
 
 body {
     background-color: $primaryColor;
 }
 
-h1 {
-    @include fontSize(40px);
-    text-shadow: 1px 2px #000;
-}
+
+
+@import '_mediaQueries';

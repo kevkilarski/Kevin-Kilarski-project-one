@@ -1,0 +1,103 @@
+@import '_mixins.scss';
+
+/* ======================
+TYPOGRAPHY
+=========================*/
+
+html {
+    font-family: 'Lato', sans-serif;
+    font-size: 125%;
+    font-weight: 700;
+    color: #2C2C2C;
+}
+
+h1, .logo, button {
+    font-family: 'Playfair Display SC', serif;
+}
+
+h2, h3, h4, h5, .midpageHeadings {
+    @include lineHeight(58);
+}
+
+body, button, input::placeholder {
+    @include lineHeight(32);
+}
+
+h1  {
+    @include fontSize(121.2);
+}
+
+h2 {
+    @include fontSize(87);
+    @include letterSpacing(9);
+}
+
+h3 {
+    @include fontSize(62);
+    @include letterSpacing(6.7);
+}
+
+h4, h5 {
+    @include fontSize(35);
+    @include letterSpacing(3.8);
+}
+
+.logo {
+    @include fontSize(34.6);
+    text-align: center;
+}
+
+.midpageHeadings {
+    @include fontSize(30);
+    @include letterSpacing(3.2);
+}
+
+button {
+    @include lineSpacing(1);
+}
+
+body {
+    @include lineSpacing(2);
+    font-weight: 400;
+}
+
+input::placeholder {
+    @include lineSpacing(2);
+    font-weight: 300;
+}
+
+
+
+h1, h2, h3, h4, h5, p, a, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+// ul {
+//     list-style: none;
+// }
+
+// a {
+//     text-decoration: none;
+//     color: black;
+// }
+
+// p {
+//     font-size: 0.9rem;
+//     font-weight: 400;
+//     line-height: 1.45rem;
+//     text-align: center;
+// }
+
+
+
+// h1, h2 {
+//     font-weight: 400;
+//     text-align: center;
+// }
+
+// h3, h4, nav, button {
+//     font-weight: 600;
+//     text-transform: uppercase;
+//     text-align: center;
+// }

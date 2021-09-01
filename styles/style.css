@@ -214,62 +214,106 @@ td, th {
   overflow: hidden;
 }
 
+/* ======================
+TYPOGRAPHY
+=========================*/
+html {
+  font-family: "Lato", sans-serif;
+  font-size: 125%;
+  font-weight: 700;
+  color: #2C2C2C;
+}
+
+h1, .logo, button {
+  font-family: "Playfair Display SC", serif;
+}
+
+h2, h3, h4, h5, .midpageHeadings {
+  line-height: 58px;
+  line-height: 2.9rem;
+}
+
+input::-webkit-input-placeholder {
+  line-height: 32px;
+  line-height: 1.6rem;
+}
+
+input::-moz-placeholder {
+  line-height: 32px;
+  line-height: 1.6rem;
+}
+
+input:-ms-input-placeholder {
+  line-height: 32px;
+  line-height: 1.6rem;
+}
+
+input::-ms-input-placeholder {
+  line-height: 32px;
+  line-height: 1.6rem;
+}
+
+body, button, input::placeholder {
+  line-height: 32px;
+  line-height: 1.6rem;
+}
+
 h1 {
-  font-size: 40px;
-  color: blue;
-  font-weight: bold;
-  text-shadow: 1px 2px #000;
+  font-size: 111.2px;
+  font-size: 5.56rem;
+}
+
+h2 {
+  font-size: 87px;
+  font-size: 4.35rem;
+  letter-spacing: 9px;
+  letter-spacing: 0.45rem;
 }
 
 h3 {
+  font-size: 62px;
+  font-size: 3.1rem;
+  letter-spacing: 6.7px;
+  letter-spacing: 0.335rem;
+}
+
+h4, h5 {
+  font-size: 35px;
+  font-size: 1.75rem;
+  letter-spacing: 3.8px;
+  letter-spacing: 0.19rem;
+}
+
+.logo {
+  font-size: 34.6px;
+  font-size: 1.73rem;
+  text-align: center;
+}
+
+.midpageHeadings {
   font-size: 30px;
-  color: blue;
-  font-weight: bold;
-  letter-spacing: 2px;
+  font-size: 1.5rem;
+  letter-spacing: 3.2px;
+  letter-spacing: 0.16rem;
+}
+
+/* ======================
+GENERAL
+=========================*/
+.wrapper {
+  width: 90%;
+  max-width: 54rem;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  padding: 5rem 0;
 }
 
 body {
-  background-color: #881a70;
-}
-
-main {
-  border: #30d5a8;
-}
-
-p {
-  margin: 0 20px;
-}
-
-nav {
-  background-color: #30d5a8;
-}
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  background-color: #23af89;
-}
-nav ul a {
-  display: inline-block;
-  padding: 15px 30px;
-  background-color: #881a70;
-}
-nav ul a:hover {
-  background: blue;
-}
-
-@media (max-width: 600px) {
-  nav ul a {
-    padding: 10px 20px;
-  }
-  nav ul a:hover {
-    background: red;
-  }
-
-  a {
-    padding: 10px 20px;
-  }
-  a:hover {
-    background: red;
-  }
+  background-color: red;
 }
