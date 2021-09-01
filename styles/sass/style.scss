@@ -13,6 +13,9 @@ body {
     background-color: papayawhip;
 }
 
+.wrapper {
+    border: 1px solid pink;
+}
 
 // HEADING
 
@@ -63,5 +66,11 @@ header h3 {
 //     display: block;
 // }
 
+
+button {
+    border: none;
+    background: red;
+    padding: 30px;
+}
 
 @import '_mediaQueries';

@@ -347,6 +347,10 @@ body {
   background-color: papayawhip;
 }
 
+.wrapper {
+  border: 1px solid pink;
+}
+
 header {
   height: 80vh;
   background-color: red;
@@ -398,4 +402,10 @@ header {
 header .logo,
 header h3 {
   text-transform: lowercase;
+}
+
+button {
+  border: none;
+  background: red;
+  padding: 30px;
 }
