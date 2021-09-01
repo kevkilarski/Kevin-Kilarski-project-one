@@ -1,20 +1,10 @@
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-body {
-  margin: 0;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+@charset "UTF-8";
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block;
 }
 
-audio, canvas, progress, video {
+audio, canvas, video {
   display: inline-block;
-  vertical-align: baseline;
 }
 
 audio:not([controls]) {
@@ -22,16 +12,26 @@ audio:not([controls]) {
   height: 0;
 }
 
-[hidden], template {
+[hidden] {
   display: none;
 }
 
-a {
-  background: 0 0;
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: thin dotted;
 }
 
 a:active, a:hover {
   outline: 0;
+}
+
+h1 {
+  font-size: 2em;
 }
 
 abbr[title] {
@@ -46,13 +46,23 @@ dfn {
   font-style: italic;
 }
 
-h1 {
-  font-size: 2em;
-}
-
 mark {
   background: #ff0;
   color: #000;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: “”‘’;
 }
 
 small {
@@ -74,11 +84,6 @@ sub {
   bottom: -0.25em;
 }
 
-a, h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-  padding: 0;
-}
-
 img {
   border: 0;
 }
@@ -87,37 +92,20 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-figure {
-  margin: 1em 40px;
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
 }
 
-hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  height: 0;
-}
-
-pre {
-  overflow: auto;
-}
-
-code, kbd, pre, samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-
-button, input, optgroup, select, textarea {
-  color: inherit;
-  font: inherit;
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
   margin: 0;
 }
 
-button {
-  overflow: visible;
-}
-
-button, select {
-  text-transform: none;
+button, input {
+  line-height: normal;
 }
 
 button, html input[type=button], input[type=reset], input[type=submit] {
@@ -125,27 +113,14 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   cursor: pointer;
 }
 
-button[disabled], html input[disabled] {
+button[disabled], input[disabled] {
   cursor: default;
-}
-
-button::-moz-focus-inner, input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-input {
-  line-height: normal;
 }
 
 input[type=checkbox], input[type=radio] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
-}
-
-input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
-  height: auto;
 }
 
 input[type=search] {
@@ -158,23 +133,9 @@ input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-se
   -webkit-appearance: none;
 }
 
-fieldset {
-  border: 1px solid silver;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-
-legend {
-  border: 0;
-  padding: 0;
-}
-
 textarea {
   overflow: auto;
-}
-
-optgroup {
-  font-weight: 700;
+  vertical-align: top;
 }
 
 table {
@@ -182,13 +143,13 @@ table {
   border-spacing: 0;
 }
 
-td, th {
-  padding: 0;
+body, figure {
+  margin: 0;
 }
 
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
 }
 
 .clearfix:after {
@@ -200,18 +161,9 @@ td, th {
   height: 0;
 }
 
-.sr-only:not(:focus):not(:active) {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0);
-  overflow: hidden;
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* ======================
@@ -253,9 +205,14 @@ input::-ms-input-placeholder {
   line-height: 1.6rem;
 }
 
-body, button, input::placeholder {
+p, button, input::placeholder {
   line-height: 32px;
   line-height: 1.6rem;
+}
+
+nav {
+  line-height: 29px;
+  line-height: 1.45rem;
 }
 
 h1 {
@@ -287,7 +244,6 @@ h4, h5 {
 .logo {
   font-size: 34.6px;
   font-size: 1.73rem;
-  text-align: center;
 }
 
 .midpageHeadings {
@@ -295,6 +251,74 @@ h4, h5 {
   font-size: 1.5rem;
   letter-spacing: 3.2px;
   letter-spacing: 0.16rem;
+}
+
+button, nav {
+  letter-spacing: 1px;
+  letter-spacing: 0.05rem;
+}
+
+input::-webkit-input-placeholder {
+  letter-spacing: 2px;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+}
+
+input::-moz-placeholder {
+  letter-spacing: 2px;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+}
+
+input:-ms-input-placeholder {
+  letter-spacing: 2px;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+}
+
+input::-ms-input-placeholder {
+  letter-spacing: 2px;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+}
+
+p, input::placeholder {
+  letter-spacing: 2px;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+}
+
+input::-webkit-input-placeholder {
+  font-weight: 300;
+}
+
+input::-moz-placeholder {
+  font-weight: 300;
+}
+
+input:-ms-input-placeholder {
+  font-weight: 300;
+}
+
+input::-ms-input-placeholder {
+  font-weight: 300;
+}
+
+input::placeholder {
+  font-weight: 300;
+}
+
+.logo, button, nav {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #2C2C2C;
 }
 
 /* ======================
@@ -310,10 +334,68 @@ img {
   max-width: 100%;
 }
 
+h1, h2, h3, h4, h5, p, a, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
 section {
   padding: 5rem 0;
 }
 
 body {
+  background-color: papayawhip;
+}
+
+header {
+  height: 80vh;
   background-color: red;
+}
+
+.headerContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 1rem;
+}
+
+.logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 3 500px;
+          flex: 1 3 500px;
+  text-align: left;
+}
+
+.headerContent nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headerContent nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 500px;
+          flex: 3 1 500px;
+  margin-left: 1rem;
+}
+
+header .logo,
+header h3 {
+  text-transform: lowercase;
 }

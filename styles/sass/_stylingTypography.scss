@@ -1,4 +1,4 @@
-@import '_mixins.scss';
+@import '_mixins';
 
 /* ======================
 TYPOGRAPHY
@@ -19,12 +19,16 @@ h2, h3, h4, h5, .midpageHeadings {
     @include lineHeight(58);
 }
 
-body, button, input::placeholder {
+p, button, input::placeholder {
     @include lineHeight(32);
 }
 
+nav {
+    @include lineHeight(29);
+}
+
 h1  {
-    @include fontSize(121.2);
+    @include fontSize(111.2);
 }
 
 h2 {
@@ -44,7 +48,6 @@ h4, h5 {
 
 .logo {
     @include fontSize(34.6);
-    text-align: center;
 }
 
 .midpageHeadings {
@@ -52,26 +55,97 @@ h4, h5 {
     @include letterSpacing(3.2);
 }
 
-button {
-    @include lineSpacing(1);
+button, nav {
+    @include letterSpacing(1);
 }
 
-body {
-    @include lineSpacing(2);
+p, input::placeholder {
+    @include letterSpacing(2);
     font-weight: 400;
 }
 
 input::placeholder {
-    @include lineSpacing(2);
     font-weight: 300;
 }
 
-
-
-h1, h2, h3, h4, h5, p, a, ul, li {
-    margin: 0;
-    padding: 0;
+.logo, button, nav {
+    text-align: center;
 }
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #2C2C2C;
+}
+
+
+
+
+
+// html {
+//     font-family: 'Lato', sans-serif;
+//     font-size: 125%;
+//     font-weight: 700;
+//     color: #2C2C2C;
+// }
+
+// h1, .logo, button {
+//     font-family: 'Playfair Display SC', serif;
+// }
+
+// h2, h3, h4, h5, .midpageHeadings {
+//     line-height: 2.9rem;
+// }
+
+// p, button, input::placeholder {
+//     line-height: 1.6rem;
+// }
+
+// h1  {
+//     font-size: 5.56rem;
+// }
+
+// h2 {
+//     font-size: 4.35rem;
+//     letter-spacing: 0.45rem;
+// }
+
+// h3 {
+//     font-size: 3.1rem;
+//     letter-spacing: 0.335rem;
+// }
+
+// h4, h5 {
+//     font-size: 1.75rem;
+//     letter-spacing: 0.19rem;
+// }
+
+// .logo {
+//     font-size: 1.75rem;
+//     text-align: center;
+// }
+
+// .midpageHeadings {
+//     font-size: 1.5rem;
+//     letter-spacing: 0.16rem;
+// }
+
+// button {
+//     letter-spacing: 0.05rem;
+// }
+
+// p {
+//     letter-spacing: 0.1rem;
+//     font-weight: 400;
+// }
+
+// input::placeholder {
+//     letter-spacing: 0.1rem;
+//     font-weight: 300;
+// }
 
 // ul {
 //     list-style: none;
@@ -79,25 +153,16 @@ h1, h2, h3, h4, h5, p, a, ul, li {
 
 // a {
 //     text-decoration: none;
-//     color: black;
-// }
-
-// p {
-//     font-size: 0.9rem;
-//     font-weight: 400;
-//     line-height: 1.45rem;
-//     text-align: center;
+//     color: #2C2C2C;
 // }
 
 
 
-// h1, h2 {
-//     font-weight: 400;
-//     text-align: center;
-// }
 
-// h3, h4, nav, button {
-//     font-weight: 600;
-//     text-transform: uppercase;
-//     text-align: center;
-// }
+
+
+
+
+
+
+
