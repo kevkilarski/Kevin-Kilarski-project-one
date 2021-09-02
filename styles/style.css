@@ -340,7 +340,7 @@ h1, h2, h3, h4, h5, p, a, ul, li {
 }
 
 section {
-  padding: 5rem 0;
+  padding: 6rem 0;
 }
 
 button {
@@ -519,6 +519,7 @@ nav {
 VISIT GUYANA
 =========================*/
 section.visitGuyana {
+  background-color: #FAFFFE;
   padding-top: 9rem;
 }
 
@@ -531,32 +532,63 @@ section.visitGuyana {
           justify-content: space-between;
 }
 
-.visitGuyanaText {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 65%;
-          flex: 0 0 65%;
-}
-
 .visitGuyanaText p {
   padding: 1rem 0;
 }
 
 .visitGuyanaImg {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  position: relative;
-  z-index: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-left: 10%;
 }
 
-.visitGuyanaImg::before {
-  content: "";
-  position: absolute;
+.visitGuyanaImg img {
+  -webkit-box-shadow: -0.9rem 0.9rem #50E3C2;
+          box-shadow: -0.9rem 0.9rem #50E3C2;
+}
+
+/* ======================
+THREE IMAGES
+=========================*/
+.threeImages {
   background-color: #50E3C2;
-  width: 100%;
-  height: 90%;
-  left: -1rem;
-  bottom: 0.8rem;
-  z-index: -1;
-  left: rem;
+}
+
+.threeImagesContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.5rem;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.threeImagesItems {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 16rem;
+          flex: 1 0 16rem;
+  height: 20rem;
+}
+
+.threeImages1 {
+  background: url("../assets/gallery-image1.jpg") center;
+  background-color: red;
+  background-size: cover;
+}
+
+.threeImages2 {
+  background: url("../assets/gallery-image2.jpg") center;
+  background-color: blue;
+  background-size: cover;
+}
+
+.threeImages3 {
+  background: url("../assets/gallery-image3.jpg") center;
+  background-color: green;
+  background-size: cover;
 }

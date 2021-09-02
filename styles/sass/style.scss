@@ -89,9 +89,6 @@ nav {
 }
 
 
-
-
-
 .titleGroup {
     // border: 1px solid red;
     height: 100%;
@@ -136,8 +133,6 @@ nav {
     color: #063974;
     z-index: 1;
 }
-
-
 
 .titleSunglasses {
     position: absolute;
@@ -190,6 +185,7 @@ VISIT GUYANA
 =========================*/
 
 section.visitGuyana {
+    background-color: #FAFFFE;
     padding-top: 9rem;
 }
 
@@ -199,37 +195,77 @@ section.visitGuyana {
 }
 
 .visitGuyanaText {
-    flex: 0 0 65%;
+ 
 }
 
 .visitGuyanaText p {
     padding: 1rem 0;
 }
 
-
 .visitGuyanaImg {
-    flex: 0 0 auto;
-    position: relative;
-    z-index: 1;
+    flex-shrink: 0;
+    margin-left: 10%;
 }
 
-.visitGuyanaImg::before {
-    content: '';
-    position: absolute;
-    background-color:#50E3C2;
-    width: 100%;
-    height: 90%;
-    left: -1rem;
-    bottom: 0.8rem;
-    z-index: -1;
-    left: rem;
+.visitGuyanaImg img {
+    box-shadow: -0.9rem 0.9rem #50E3C2;
 }
 
 
 
 
+// .visitGuyanaImg::before {
+//     content: '';
+//     position: absolute;
+//     background-color:#50E3C2;
+//     width: 100%;
+//     height: 90%;
+//     left: -1rem;
+//     bottom: 0.8rem;
+//     z-index: -1;
+//     left: rem;
+// }
 
 
 
+
+/* ======================
+THREE IMAGES
+=========================*/
+
+.threeImages {
+    background-color: #50E3C2;
+}
+
+.threeImagesContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-content: flex-start;
+}
+
+.threeImagesItems {
+    flex: 1 0 16rem;
+    height: 20rem;
+}
+
+.threeImages1 {
+    background: url("../assets/gallery-image1.jpg") center;
+    background-color: red;
+    background-size: cover;
+}
+
+.threeImages2 {
+    background: url("../assets/gallery-image2.jpg") center;
+    background-color: blue;
+    background-size: cover;
+}
+
+.threeImages3 {
+    background: url("../assets/gallery-image3.jpg") center;
+    background-color: green;
+    background-size: cover;
+}
 
 @import '_mediaQueries';
