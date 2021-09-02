@@ -4,7 +4,7 @@
 @import '_vars';
 @import '_mixins.scss';
 
-
+@import '_heading.scss';
 
 
 
@@ -13,26 +13,29 @@ body {
     background-color: papayawhip;
 }
 
-.wrapper {
-    border: 1px solid pink;
-}
 
-// HEADING
+
+/* ======================
+HEADING
+=========================*/
 
 header {
-    height: 80vh;
-    background-color: red;
+    background: url("../assets/home-image-1.jpg") center;
+    background-size: cover;
 }
 
 .headerContent {
     display: flex;
     flex-direction: column;
     padding-top: 1rem;
+    height: 80vh;
+    justify-content: space-between;
 }
 
 .logo {
-    flex: 1 3 500px;
+    flex: 1 3 25rem;
     text-align: left;
+    color: #50E3C2;
 }
 
 .headerContent nav {
@@ -44,8 +47,20 @@ header {
 .headerContent nav ul {
     display: flex;
     justify-content: space-between;
-    flex: 3 1 500px;
+    flex: 3 1 1rem;
     margin-left: 1rem;
+}
+
+.headerContent nav ul li {
+    margin-left: 1rem;
+}
+
+.headerContent nav ul li a {
+    color: #FAFFFE;
+}
+
+.headerContent nav ul li a.homeNav {
+    color: #50E3C2;
 }
 
 header .logo,
@@ -53,8 +68,48 @@ header h3 {
     text-transform: lowercase;
 }
 
+.title {
+    margin-bottom: 11rem;
+    z-index: 1;
 
+}
 
+.title h3 {
+    color: #0C5F4C;
+}
+
+.title h1 {
+    line-height: 5rem;
+    color: #063974;
+}
+
+nav {
+    text-transform: uppercase;
+}
+
+.titleContainer:before {
+    content: '';
+    position: absolute;
+    background: url("../assets/header-box.jpg") center;
+    background-position: cover;
+    background-repeat: no-repeat;
+
+    width: 48rem;
+    height: 35rem;
+    left: -17rem;
+    bottom: -6rem;
+    z-index: 0;
+}
+
+.titleContainer {
+    display: flex;
+    position: relative;
+}
+
+.titlegap {
+    height: 100px;
+    width: 30%;
+}
 
 
 // .titlePrefix {
@@ -67,10 +122,21 @@ header h3 {
 // }
 
 
-button {
-    border: none;
-    background: red;
-    padding: 30px;
+
+
+/* ======================
+HEADING
+=========================*/
+
+section.visitGuyana {
+    padding-top: 9rem;
 }
+
+
+
+
+
+
+
 
 @import '_mediaQueries';

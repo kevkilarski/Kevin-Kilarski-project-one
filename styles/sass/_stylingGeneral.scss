@@ -3,8 +3,8 @@ GENERAL
 =========================*/
 
 .wrapper {
-    width: 90%;
-    max-width: 54rem;
+    width: 85%;
+    max-width: 64rem;
     margin: 0 auto;
 }
 
@@ -21,7 +21,15 @@ section {
     padding: 5rem 0;
 }
 
+button {
+    border: none;
+    background: #063974;
+    padding: 0.4rem 0.9rem;
+}
 
+button a {
+    color: #FAFFFE;
+}
 
 
 
