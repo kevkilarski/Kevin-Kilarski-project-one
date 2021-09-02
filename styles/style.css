@@ -452,11 +452,11 @@ nav {
   content: "";
   position: absolute;
   background: url("../assets/header-box.jpg") center;
-  background-position: cover;
+  background-size: cover;
   background-repeat: no-repeat;
-  width: 48rem;
-  height: 35rem;
-  left: -17rem;
+  width: 34.5rem;
+  height: 32rem;
+  left: -10rem;
   bottom: -6rem;
   z-index: 0;
 }
@@ -474,8 +474,47 @@ nav {
 }
 
 /* ======================
-HEADING
+VISIT GUYANA
 =========================*/
 section.visitGuyana {
   padding-top: 9rem;
+}
+
+.visitGuyanaContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.visitGuyanaText {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 65%;
+          flex: 0 0 65%;
+}
+
+.visitGuyanaText p {
+  padding: 1rem 0;
+}
+
+.visitGuyanaImg {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.visitGuyanaImg::before {
+  content: "";
+  position: absolute;
+  background-color: #50E3C2;
+  width: 100%;
+  height: 90%;
+  left: -1rem;
+  bottom: 0.8rem;
+  z-index: -1;
+  left: rem;
 }
