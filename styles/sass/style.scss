@@ -22,14 +22,15 @@ HEADING
 header {
     background: url("../assets/home-image-1.jpg") center;
     background-size: cover;
+    height: 80vh;
 }
 
 .headerContent {
     display: flex;
     flex-direction: column;
     padding-top: 1rem;
-    height: 80vh;
     justify-content: space-between;
+    height: 100%;
 }
 
 .logo {
@@ -87,41 +88,101 @@ nav {
     text-transform: uppercase;
 }
 
-.titleContainer:before {
-    content: '';
-    position: absolute;
-    background: url("../assets/header-box.jpg") center;
-    background-size: cover;
-    background-repeat: no-repeat;
 
-    width: 34.5rem;
-    height: 32rem;
-    left: -10rem;
-    bottom: -6rem;
-    z-index: 0;
+
+
+
+.titleGroup {
+    // border: 1px solid red;
+    height: 100%;
+    display: flex;
+
+    align-items: center;
 }
 
-.titleContainer {
+.titleBackdrop {
+    // background-color: red;
+    height: 100%;
+    width: 40%;
+}
+
+.titleLogo {
+    // background-color: blue;
+    height: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
     position: relative;
 }
 
-.titlegap {
-    height: 100px;
-    width: 30%;
+.titleGroup h3 {
+    display: block;
+}
+
+.titlePrefix {
+    text-transform: lowercase;
+    font-family: 'Lato', sans-serif;
+    @include fontSize(62);
+    @include letterSpacing(6.7);
+    @include lineHeight(58);
+    color: #0C5F4C;
+    margin-left: 0.5rem;
+}
+
+.titleLogo h1 {
+    line-height: 5rem;
+    color: #063974;
+    z-index: 1;
 }
 
 
-// .titlePrefix {
-//     text-transform: lowercase;
-//     font-family: 'Lato', sans-serif;
-//     @include fontSize(62);
-//     @include letterSpacing(6.7);
-//     @include lineHeight(58);
-//     display: block;
+
+.titleSunglasses {
+    position: absolute;
+    background: url("../assets/header-box.jpg") center;
+    // background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 40rem;
+    width: 40rem;
+
+    left: -32rem;
+    bottom: -9rem;
+}
+
+
+
+
+
+
+
+
+
+// .titleContainer:before {
+//     content: '';
+//     position: absolute;
+//     background: url("../assets/header-box.jpg") center;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+
+//     width: 34.5rem;
+//     height: 32rem;
+//     left: -10rem;
+//     bottom: -6rem;
+//     z-index: 0;
 // }
 
+// .titleContainer {
+//     display: flex;
+//     position: relative;
+// }
 
+// .titlegap {
+//     height: 100px;
+//     width: 30%;
+// }
 
 
 /* ======================
