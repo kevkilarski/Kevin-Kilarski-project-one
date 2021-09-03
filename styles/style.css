@@ -508,11 +508,11 @@ nav {
 .titleSunglasses {
   position: absolute;
   background: url("../assets/header-box.jpg") center;
-  background-repeat: no-repeat;
-  height: 40rem;
-  width: 40rem;
-  left: -32rem;
-  bottom: -9rem;
+  background-size: cover;
+  height: 35rem;
+  width: 42rem;
+  left: -36rem;
+  bottom: -6rem;
 }
 
 /* ======================
@@ -551,7 +551,7 @@ section.visitGuyana {
 THREE IMAGES
 =========================*/
 .threeImages {
-  background-color: #50E3C2;
+  background-color: #D2F9F1;
 }
 
 .threeImagesContainer {
@@ -631,7 +631,7 @@ MIDPAGE
 }
 
 .midpageIconFile i {
-  padding-left: 0.6rem;
+  padding-left: 0.7rem;
   background-color: unset;
 }
 
@@ -645,4 +645,93 @@ MIDPAGE
   left: 0;
   border-radius: 50%;
   z-index: -1;
+}
+
+/* ======================
+PLAN AHEAD
+=========================*/
+.planAhead {
+  background-color: #D2F9F1;
+  padding: 0;
+}
+
+.planAheadContainer {
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.planAheadItems {
+  border: 1px dotted blue;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 32rem;
+          flex: 1 0 32rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.planAheadItems p {
+  padding: 1rem 45% 1rem 0;
+}
+
+.planAheadItems button {
+  width: 10rem;
+}
+
+.planAheadText,
+.planAheadImg2 {
+  margin-left: 13rem;
+}
+
+.planAheadText,
+.planAheadImg1 {
+  margin-bottom: 5rem;
+}
+
+.planAheadItems.newLocationsText {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.planAheadItems.newLocationsText p {
+  text-align: right;
+  padding: 1rem 0 1rem 45%;
+}
+
+.planAheadImg1 {
+  background: url("../assets/left-image.jpg") center;
+  background-size: cover;
+  background-color: red;
+  width: 40rem;
+  height: 20rem;
+  -webkit-box-shadow: 0.9rem 0.9rem #50E3C2;
+          box-shadow: 0.9rem 0.9rem #50E3C2;
+  position: relative;
+  top: -1.5rem;
+}
+
+.planAheadImg2 {
+  background: url("../assets/right-image.jpg") center;
+  background-color: red;
+  width: 40rem;
+  height: 20rem;
+  -webkit-box-shadow: -0.9rem 0.9rem #50E3C2;
+          box-shadow: -0.9rem 0.9rem #50E3C2;
+  position: relative;
+  bottom: -1.5rem;
 }

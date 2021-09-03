@@ -137,14 +137,13 @@ nav {
 .titleSunglasses {
     position: absolute;
     background: url("../assets/header-box.jpg") center;
-    // background-size: cover;
-    background-repeat: no-repeat;
+    background-size: cover;
 
-    height: 40rem;
-    width: 40rem;
+    height: 35rem;
+    width: 42rem;
 
-    left: -32rem;
-    bottom: -9rem;
+    left: -36rem;
+    bottom: -6rem;
 }
 
 
@@ -194,10 +193,6 @@ section.visitGuyana {
     justify-content: space-between;
 }
 
-.visitGuyanaText {
- 
-}
-
 .visitGuyanaText p {
     padding: 1rem 0;
 }
@@ -234,7 +229,7 @@ THREE IMAGES
 =========================*/
 
 .threeImages {
-    background-color: #50E3C2;
+    background-color: #D2F9F1;
 }
 
 .threeImagesContainer {
@@ -307,7 +302,7 @@ MIDPAGE
 }
 
 .midpageIconFile i {
-    padding-left: 0.6rem;
+    padding-left: 0.7rem;
     background-color: unset;
 }
 
@@ -323,5 +318,89 @@ MIDPAGE
     z-index: -1;
 }
 
+
+
+
+/* ======================
+PLAN AHEAD
+=========================*/
+
+.planAhead {
+    background-color: #D2F9F1;
+    padding: 0;
+}
+
+.planAheadContainer {
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.planAheadItems {
+    border: 1px dotted blue;
+    flex: 1 0 32rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.planAheadItems p {
+    padding: 1rem 45% 1rem 0;
+}
+
+.planAheadItems button {
+    width: 10rem;
+}
+
+
+.planAheadText,
+.planAheadImg2 {
+    margin-left: 13rem;
+}
+
+.planAheadText,
+.planAheadImg1 {
+    margin-bottom: 5rem;
+}
+
+
+.planAheadItems.newLocationsText {
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.planAheadItems.newLocationsText p {
+    text-align: right;
+    padding: 1rem 0 1rem 45%;
+}
+
+
+
+
+
+.planAheadImg1 {
+    background: url("../assets/left-image.jpg") center;
+    background-size: cover;
+    background-color: red;
+    width: 40rem;
+    height: 20rem;
+
+    box-shadow: 0.9rem 0.9rem #50E3C2;
+
+    position: relative;
+    top: -1.5rem;
+}
+
+.planAheadImg2 {
+    background: url("../assets/right-image.jpg") center;
+    background-color: red;
+    width: 40rem;
+    height: 20rem;
+
+    box-shadow: -0.9rem 0.9rem #50E3C2;
+    position: relative;
+    bottom: -1.5rem;
+}
 
 @import '_mediaQueries';
