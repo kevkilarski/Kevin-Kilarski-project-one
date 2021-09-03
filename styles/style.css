@@ -577,18 +577,72 @@ THREE IMAGES
 
 .threeImages1 {
   background: url("../assets/gallery-image1.jpg") center;
-  background-color: red;
   background-size: cover;
 }
 
 .threeImages2 {
   background: url("../assets/gallery-image2.jpg") center;
-  background-color: blue;
   background-size: cover;
 }
 
 .threeImages3 {
   background: url("../assets/gallery-image3.jpg") center;
-  background-color: green;
   background-size: cover;
+}
+
+/* ======================
+MIDPAGE
+=========================*/
+.midpage {
+  background-color: #FAFFFE;
+}
+
+.midpageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.midpageItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 49%;
+          flex: 1 0 49%;
+  min-width: 18rem;
+  margin-bottom: 1rem;
+}
+
+.midpageItems i {
+  margin-top: 0.6rem;
+  margin-right: 1rem;
+  color: #FAFFFE;
+  border-radius: 50%;
+  background-color: #50E3C2;
+  padding: 0.45rem;
+  position: relative;
+  z-index: 1;
+}
+
+.midpageIconFile i {
+  padding-left: 0.6rem;
+  background-color: unset;
+}
+
+.midpageIconFile i::after {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background-color: #50E3C2;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  z-index: -1;
 }
