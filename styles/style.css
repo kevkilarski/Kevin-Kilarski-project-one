@@ -667,8 +667,8 @@ PLAN AHEAD
 .planAheadItems {
   border: 1px dotted blue;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 32rem;
-          flex: 1 0 32rem;
+      -ms-flex: 1 0 25rem;
+          flex: 1 0 25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -691,12 +691,12 @@ PLAN AHEAD
 
 .planAheadText,
 .planAheadImg2 {
-  margin-left: 13rem;
+  margin-left: 15%;
 }
 
 .planAheadText,
 .planAheadImg1 {
-  margin-bottom: 5rem;
+  margin-bottom: 4%;
 }
 
 .planAheadItems.newLocationsText {
@@ -727,6 +727,7 @@ PLAN AHEAD
 
 .planAheadImg2 {
   background: url("../assets/right-image.jpg") center;
+  background-size: cover;
   background-color: red;
   width: 40rem;
   height: 20rem;
@@ -734,4 +735,63 @@ PLAN AHEAD
           box-shadow: -0.9rem 0.9rem #50E3C2;
   position: relative;
   bottom: -1.5rem;
+}
+
+/* ======================
+BOTTOM SPAN IMAGE
+=========================*/
+.bottomSpanImg {
+  height: 20rem;
+  background: url("../assets/banner-image.jpg") center;
+  background-size: cover;
+}
+
+/* ======================
+FREE TRIP
+=========================*/
+.freeTrip {
+  background-color: #D2F9F1;
+  height: 40rem;
+}
+
+.freeTrip .wrapper {
+  height: 100%;
+}
+
+.freeTripContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.freeTripContainer button {
+  padding: 0.5rem 1rem;
+}
+
+.freeTripContainer p {
+  text-align: center;
+  padding: 1rem 6rem;
+}
+
+/* ======================
+FOOTER
+=========================*/
+footer {
+  background-color: #2C2C2C;
+  color: #FAFFFE;
+}
+
+footer p {
+  text-align: center;
 }
