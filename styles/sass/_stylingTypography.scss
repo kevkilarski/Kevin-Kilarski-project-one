@@ -15,7 +15,7 @@ h1, .logo, button {
     font-family: 'Playfair Display SC', serif;
 }
 
-h2, h3, h4, h5, .midpageHeadings {
+h2, h3, h4, h5, h6 {
     @include lineHeight(58);
 }
 
@@ -50,7 +50,7 @@ h4, h5 {
     @include fontSize(34.6);
 }
 
-.midpageHeadings {
+h6 {
     @include fontSize(30);
     @include letterSpacing(3.2);
 }

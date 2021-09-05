@@ -1,0 +1,121 @@
+/* ======================
+CONTACT - HEADING
+=========================*/
+
+.contact-header {
+    background: url("../assets/contact-image-1.jpg") center;
+    background-size: cover;
+    height: 65vh;
+}
+
+.contact-header-cap {
+    text-transform: capitalize;
+}
+
+
+.titleGroup h2 {
+    color: #FAFFFE;
+}
+
+.contact-header nav ul li a.homeNav {
+    color: #FAFFFE;
+}
+
+
+.contact-header nav ul li a.contactNav {
+    color: #50E3C2;
+}
+
+
+
+/* ======================
+CONTACT - FORM AND LINKS
+=========================*/
+
+.contact-formAndLinks {
+    padding: 0;
+}
+
+.contact-formAndLinksContainer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: red;
+}
+
+.contact-formContainer {
+    // background-color: blue;
+    background-color: #FAFFFE;;
+    position: relative;
+    top: -7em;
+    left: -5%;
+
+    height: 32rem;
+    padding: 3rem;
+
+    flex: 1 1 70%;
+    gap: 1.5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    box-shadow: 0.9rem 0.9rem #50E3C2;
+
+}
+
+
+input[type=text],
+input[type=email] {
+    flex: 1 0 35%;
+    height: 3rem;
+    padding: 1rem;
+
+    border: none;
+    border-bottom: 0.1rem solid #50E3C2;
+}
+
+textarea.contact-message {
+    resize: none;
+    flex: 1 0 100%;
+    height: 65%;
+    padding: 1rem;
+    
+    border: 0.1rem solid #50E3C2;
+}
+
+button[type=submit] {
+    width: 100%;
+    color: #FAFFFE;
+}
+
+
+
+
+
+
+.contact-linksContainer {
+    background-color: green;
+
+    flex: 1 1 13rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-linksIcons {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.contact-linksEmail {
+    margin: 1rem 0;
+}
+
+.contact-linksEmail a {
+    font-weight: 700;
+}
+
+.break {
+    display: block;
+}

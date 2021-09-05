@@ -194,7 +194,7 @@ h1, .logo, button {
   font-family: "Playfair Display SC", serif;
 }
 
-h2, h3, h4, h5, .midpageHeadings {
+h2, h3, h4, h5, h6 {
   line-height: 58px;
   line-height: 2.9rem;
 }
@@ -260,7 +260,7 @@ h4, h5 {
   font-size: 1.73rem;
 }
 
-.midpageHeadings {
+h6 {
   font-size: 30px;
   font-size: 1.5rem;
   letter-spacing: 3.2px;
@@ -348,7 +348,7 @@ img {
   max-width: 100%;
 }
 
-h1, h2, h3, h4, h5, p, a, ul, li {
+h1, h2, h3, h4, h5, h6, p, a, ul, li {
   margin: 0;
   padding: 0;
 }
@@ -810,7 +810,7 @@ CONTACT - HEADING
 .contact-header {
   background: url("../assets/contact-image-1.jpg") center;
   background-size: cover;
-  height: 50vh;
+  height: 65vh;
 }
 
 .contact-header-cap {
@@ -819,6 +819,14 @@ CONTACT - HEADING
 
 .titleGroup h2 {
   color: #FAFFFE;
+}
+
+.contact-header nav ul li a.homeNav {
+  color: #FAFFFE;
+}
+
+.contact-header nav ul li a.contactNav {
+  color: #50E3C2;
 }
 
 /* ======================
@@ -860,8 +868,8 @@ CONTACT - FORM AND LINKS
 input[type=text],
 input[type=email] {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 48%;
-          flex: 1 0 48%;
+      -ms-flex: 1 0 35%;
+          flex: 1 0 35%;
   height: 3rem;
   padding: 1rem;
   border: none;
@@ -918,6 +926,39 @@ button[type=submit] {
   font-weight: 700;
 }
 
-.linksAddressBreak {
+.break {
   display: block;
+}
+
+/* ======================
+BLOG - HEADING
+=========================*/
+.blog-header {
+  background: url("../assets/blog-image-1.jpg") center;
+  background-size: cover;
+  height: 65vh;
+}
+
+.blog-header nav ul li a.homeNav {
+  color: #FAFFFE;
+}
+
+.blog-header nav ul li a.blogNav {
+  color: #50E3C2;
+}
+
+/* ======================
+BLOG - CONTENT
+=========================*/
+.blog-postContainer {
+  padding: 0;
+}
+
+/* ======================
+BLOG - OUR MISSION
+=========================*/
+.blog-ourMission ul {
+  list-style: disc;
+  padding-left: 2rem;
+  font-weight: 400;
 }
