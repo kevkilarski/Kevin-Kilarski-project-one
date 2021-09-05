@@ -1,0 +1,468 @@
+/* ======================
+HEADING
+=========================*/
+
+header {
+    background: url("../assets/home-image-1.jpg") center;
+    background-size: cover;
+    height: 80vh;
+}
+
+.headerContent {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.logo {
+    flex: 1 3 25rem;
+    text-align: left;
+    color: #50E3C2;
+}
+
+.headerContent nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerContent nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex: 3 1 1rem;
+    margin-left: 1rem;
+}
+
+.headerContent nav ul li {
+    margin-left: 1rem;
+}
+
+.headerContent nav ul li a {
+    color: #FAFFFE;
+}
+
+.headerContent nav ul li a.homeNav {
+    color: #50E3C2;
+}
+
+header .logo,
+header h3 {
+    text-transform: lowercase;
+}
+
+.title {
+    margin-bottom: 11rem;
+    z-index: 1;
+
+}
+
+.title h3 {
+    color: #0C5F4C;
+}
+
+.title h1 {
+    line-height: 5rem;
+    color: #063974;
+}
+
+nav {
+    text-transform: uppercase;
+}
+
+
+.titleGroup {
+    // border: 1px solid red;
+    height: 100%;
+    display: flex;
+
+    align-items: center;
+}
+
+.titleBackdrop {
+    // background-color: red;
+    height: 100%;
+    width: 40%;
+}
+
+.titleLogo {
+    // background-color: blue;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    position: relative;
+}
+
+.titleGroup h3 {
+    display: block;
+}
+
+.titlePrefix {
+    text-transform: lowercase;
+    font-family: 'Lato', sans-serif;
+    @include fontSize(62);
+    @include letterSpacing(6.7);
+    @include lineHeight(58);
+    color: #0C5F4C;
+    margin-left: 0.5rem;
+}
+
+.titleLogo h1 {
+    line-height: 5rem;
+    color: #063974;
+    z-index: 1;
+}
+
+.titleSunglasses {
+    position: absolute;
+    background: url("../assets/header-box.jpg") center;
+    background-size: cover;
+
+    height: 35rem;
+    width: 42rem;
+
+    left: -36rem;
+    bottom: -6rem;
+}
+
+
+
+
+
+
+
+
+
+// .titleContainer:before {
+//     content: '';
+//     position: absolute;
+//     background: url("../assets/header-box.jpg") center;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+
+//     width: 34.5rem;
+//     height: 32rem;
+//     left: -10rem;
+//     bottom: -6rem;
+//     z-index: 0;
+// }
+
+// .titleContainer {
+//     display: flex;
+//     position: relative;
+// }
+
+// .titlegap {
+//     height: 100px;
+//     width: 30%;
+// }
+
+
+/* ======================
+VISIT GUYANA
+=========================*/
+
+section.visitGuyana {
+    background-color: #FAFFFE;
+    padding-top: 9rem;
+}
+
+.visitGuyanaContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.visitGuyanaText p {
+    padding: 1rem 0;
+}
+
+.visitGuyanaImg {
+    flex-shrink: 0;
+    margin-left: 10%;
+}
+
+.visitGuyanaImg img {
+    box-shadow: -0.9rem 0.9rem #50E3C2;
+}
+
+
+// .visitGuyanaImg::before {
+//     content: '';
+//     position: absolute;
+//     background-color:#50E3C2;
+//     width: 100%;
+//     height: 90%;
+//     left: -1rem;
+//     bottom: 0.8rem;
+//     z-index: -1;
+//     left: rem;
+// }
+
+
+
+
+/* ======================
+THREE IMAGES
+=========================*/
+
+.threeImages {
+    background-color: #D2F9F1;
+}
+
+.threeImagesContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-content: flex-start;
+}
+
+.threeImagesItems {
+    flex: 1 0 16rem;
+    height: 20rem;
+}
+
+.threeImages1 {
+    background: url("../assets/gallery-image1.jpg") center;
+    // background-color: red;
+    background-size: cover;
+}
+
+.threeImages2 {
+    background: url("../assets/gallery-image2.jpg") center;
+    // background-color: blue;
+    background-size: cover;
+}
+
+.threeImages3 {
+    background: url("../assets/gallery-image3.jpg") center;
+    // background-color: green;
+    background-size: cover;
+}
+
+
+
+/* ======================
+MIDPAGE
+=========================*/
+
+.midpage {
+    background-color: #FAFFFE;
+}
+
+.midpageContainer {
+    display: flex;
+    // border: 1px solid red;
+    flex-wrap: wrap;
+}
+
+.midpageItems {
+    // border: 1px dotted blue;
+    display: flex;
+    align-items: flex-start;
+    flex: 1 0 48%;
+    min-width: 18rem;
+    margin-bottom: 1rem;
+}
+
+.midpageItems i {
+    margin-top: 0.6rem;
+    margin-right: 1rem;
+
+    color: #FAFFFE;
+    border-radius: 50%;
+    background-color: #50E3C2;
+    padding: 0.45rem;
+
+    position: relative;
+    z-index: 1;
+}
+
+.midpageIconFile i {
+    padding-left: 0.7rem;
+    background-color: unset;
+}
+
+.midpageIconFile i::after {
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-color: #50E3C2;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+
+
+
+/* ======================
+PLAN AHEAD
+=========================*/
+
+.planAhead {
+    background-color: #D2F9F1;
+    padding: 0;
+}
+
+.planAheadContainer {
+    // border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.planAheadItems {
+    // border: 1px dotted blue;
+    flex: 1 0 27rem;
+
+    // flex: 1 0 36%;
+    // flex: 1 0 33rem;
+    // max-width: 30rem;
+    // min-width: 10rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.planAheadItems p {
+    padding: 1rem 45% 1rem 0;
+}
+
+.planAheadItems button {
+    width: 10rem;
+}
+
+
+.planAheadText,
+.planAheadImg2 {
+    // margin-left: 13rem;
+    margin-left: 15%;
+}
+
+.planAheadText,
+.planAheadImg1 {
+    // margin-bottom: 5rem;
+    margin-bottom: 4%;
+}
+
+
+.planAheadItems.newLocationsText {
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.planAheadItems.newLocationsText p {
+    text-align: right;
+    padding: 1rem 0 1rem 45%;
+}
+
+
+
+
+
+.planAheadImg1 {
+    background: url("../assets/left-image.jpg") center;
+    background-size: cover;
+    background-color: red;
+    width: 40rem;
+    height: 20rem;
+
+    box-shadow: 0.9rem 0.9rem #50E3C2;
+
+    position: relative;
+    top: -1.5rem;
+}
+
+.planAheadImg2 {
+    background: url("../assets/right-image.jpg") center;
+    background-size: cover;
+    background-color: red;
+    width: 40rem;
+    height: 20rem;
+
+    box-shadow: -0.9rem 0.9rem #50E3C2;
+    position: relative;
+    bottom: -1.5rem;
+}
+
+
+
+/* ======================
+BOTTOM SPAN IMAGE
+=========================*/
+
+.bottomSpanImg {
+    height: 20rem;
+    background: url("../assets/banner-image.jpg") center;
+    background-size: cover;
+}
+
+
+
+
+
+
+/* ======================
+FREE TRIP
+=========================*/
+
+.freeTrip {
+    background-color: #D2F9F1;
+    height: 40rem;
+    // border: 1px dotted blue;
+}
+
+.freeTrip .wrapper {
+    height: 100%;
+}
+
+.freeTripContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    // border: 1px solid red;
+}
+
+.freeTripContainer button {
+    padding: 0.5rem 1rem;
+}
+
+.freeTripContainer p {
+    text-align: center;
+    padding: 1rem 6rem;;
+}
+
+
+
+
+
+
+/* ======================
+FOOTER
+=========================*/
+
+footer {
+    background-color: #2C2C2C;
+    color: #FAFFFE;
+}
+
+footer p {
+    text-align: center;
+}
+
+
+
+
+
+@import '_mediaQueries';
+
+// Add media query for anything above a certain width for the plan ahead section.  Work on solution later.

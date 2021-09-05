@@ -353,10 +353,6 @@ button a {
   color: #FAFFFE;
 }
 
-body {
-  background-color: papayawhip;
-}
-
 /* ======================
 HEADING
 =========================*/
@@ -613,8 +609,8 @@ MIDPAGE
       -ms-flex-align: start;
           align-items: flex-start;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 49%;
-          flex: 1 0 49%;
+      -ms-flex: 1 0 48%;
+          flex: 1 0 48%;
   min-width: 18rem;
   margin-bottom: 1rem;
 }
@@ -656,7 +652,6 @@ PLAN AHEAD
 }
 
 .planAheadContainer {
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -665,10 +660,9 @@ PLAN AHEAD
 }
 
 .planAheadItems {
-  border: 1px dotted blue;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 25rem;
-          flex: 1 0 25rem;
+      -ms-flex: 1 0 27rem;
+          flex: 1 0 27rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -794,4 +788,17 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* ======================
+HEADING
+=========================*/
+.contact-header {
+  background: url("../assets/contact-image-1.jpg") center;
+  background-size: cover;
+  height: 70vh;
+}
+
+.contact-header-cap {
+  text-transform: capitalize;
 }
