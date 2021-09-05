@@ -166,6 +166,20 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* ======================
 TYPOGRAPHY
 =========================*/
@@ -185,27 +199,27 @@ h2, h3, h4, h5, .midpageHeadings {
   line-height: 2.9rem;
 }
 
-input::-webkit-input-placeholder {
+textarea::-webkit-input-placeholder {
   line-height: 32px;
   line-height: 1.6rem;
 }
 
-input::-moz-placeholder {
+textarea::-moz-placeholder {
   line-height: 32px;
   line-height: 1.6rem;
 }
 
-input:-ms-input-placeholder {
+textarea:-ms-input-placeholder {
   line-height: 32px;
   line-height: 1.6rem;
 }
 
-input::-ms-input-placeholder {
+textarea::-ms-input-placeholder {
   line-height: 32px;
   line-height: 1.6rem;
 }
 
-p, button, input::placeholder {
+p, button, input, textarea::placeholder {
   line-height: 32px;
   line-height: 1.6rem;
 }
@@ -258,53 +272,53 @@ button, nav {
   letter-spacing: 0.05rem;
 }
 
-input::-webkit-input-placeholder {
+textarea::-webkit-input-placeholder {
   letter-spacing: 2px;
   letter-spacing: 0.1rem;
   font-weight: 400;
 }
 
-input::-moz-placeholder {
+textarea::-moz-placeholder {
   letter-spacing: 2px;
   letter-spacing: 0.1rem;
   font-weight: 400;
 }
 
-input:-ms-input-placeholder {
+textarea:-ms-input-placeholder {
   letter-spacing: 2px;
   letter-spacing: 0.1rem;
   font-weight: 400;
 }
 
-input::-ms-input-placeholder {
+textarea::-ms-input-placeholder {
   letter-spacing: 2px;
   letter-spacing: 0.1rem;
   font-weight: 400;
 }
 
-p, input::placeholder {
+p, input, textarea::placeholder {
   letter-spacing: 2px;
   letter-spacing: 0.1rem;
   font-weight: 400;
 }
 
-input::-webkit-input-placeholder {
+textarea::-webkit-input-placeholder {
   font-weight: 300;
 }
 
-input::-moz-placeholder {
+textarea::-moz-placeholder {
   font-weight: 300;
 }
 
-input:-ms-input-placeholder {
+textarea:-ms-input-placeholder {
   font-weight: 300;
 }
 
-input::-ms-input-placeholder {
+textarea::-ms-input-placeholder {
   font-weight: 300;
 }
 
-input::placeholder {
+input, textarea::placeholder {
   font-weight: 300;
 }
 
@@ -791,14 +805,119 @@ footer p {
 }
 
 /* ======================
-HEADING
+CONTACT - HEADING
 =========================*/
 .contact-header {
   background: url("../assets/contact-image-1.jpg") center;
   background-size: cover;
-  height: 70vh;
+  height: 50vh;
 }
 
 .contact-header-cap {
   text-transform: capitalize;
+}
+
+.titleGroup h2 {
+  color: #FAFFFE;
+}
+
+/* ======================
+CONTACT - FORM AND LINKS
+=========================*/
+.contact-formAndLinks {
+  padding: 0;
+}
+
+.contact-formAndLinksContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: red;
+}
+
+.contact-formContainer {
+  background-color: #FAFFFE;
+  position: relative;
+  top: -7em;
+  left: -5%;
+  height: 32rem;
+  padding: 3rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 70%;
+          flex: 1 1 70%;
+  gap: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-shadow: 0.9rem 0.9rem #50E3C2;
+          box-shadow: 0.9rem 0.9rem #50E3C2;
+}
+
+input[type=text],
+input[type=email] {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 48%;
+          flex: 1 0 48%;
+  height: 3rem;
+  padding: 1rem;
+  border: none;
+  border-bottom: 0.1rem solid #50E3C2;
+}
+
+textarea.contact-message {
+  resize: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  height: 65%;
+  padding: 1rem;
+  border: 0.1rem solid #50E3C2;
+}
+
+button[type=submit] {
+  width: 100%;
+  color: #FAFFFE;
+}
+
+.contact-linksContainer {
+  background-color: green;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 13rem;
+          flex: 1 1 13rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-linksIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 40%;
+}
+
+.contact-linksEmail {
+  margin: 1rem 0;
+}
+
+.contact-linksEmail a {
+  font-weight: 700;
+}
+
+.linksAddressBreak {
+  display: block;
 }

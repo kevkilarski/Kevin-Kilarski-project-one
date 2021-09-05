@@ -28,8 +28,10 @@
                 </ul>
             </nav>
 
-            <h2>Get in <span class="contact-header-cap">touch</span></h2>
-            
+            <div class="titleGroup">
+                <h2>Get in <span class="contact-header-cap">touch</span></h2>
+            </div>
+
         </div>
     </header>
 
@@ -37,41 +39,45 @@
         <section class="contact-formAndLinks">
             <div class="wrapper">
 
-                <form action="" class="contact-formContainer">
+                <div class="contact-formAndLinksContainer">
 
-                    <input type="text" class="contact-name" id="name" name="name" placeholder="Name" required>
-                    <label for="name">Name</label>
+                    <form action="#" method="POST" class="contact-formContainer" name="contact-form">
 
-                    <input type="email" class="contact-email" id="email" name="email" placeholder="Email Address" required>
-                    <label for="email">Email address</label>
+                        <input type="text" class="contact-name" id="name" name="name" placeholder="Name" required>
+                        <label for="name" class="sr-only">Name</label>
 
-                    <textarea name="message" class="contact-message" id="message"></textarea>
-                    <label for="message"></label>
+                        <input type="email" class="contact-email" id="email" name="email" placeholder="Email Address" required>
+                        <label for="email" class="sr-only">Email address</label>
 
-                    <button type="submit" class="contact-button">Submit</button>
-                    
-                </form>
+                        <textarea name="message" class="contact-message" id="message" placeholder="Message"></textarea>
+                        <label for="message" class="sr-only"></label>
 
-                <div class="contact-linksContainer">
+                        <button type="submit" class="contact-button">Submit</button>
+                        
+                    </form>
 
-                    <div class="contact-linksIcons">
-                        <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
-                    </div>
+                    <div class="contact-linksContainer">
 
-                    <div class="contact-linksEmail">
-                        <p><a href="mailto:contact@beachstays.com">info@email.com</a></p>  
-                    </div>
+                        <div class="contact-linksIcons">
+                            <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                        </div>
 
-                    <div class="contact-linksAddress">
-                        <p>123 - 456 - 7890</p>
-                        <p class="linksAddressMobile">123 Queen Street West, 
-                            <span class="linksAddressBreak">Unit 10 </span>
-                            <span class="linksAddressBreak">Toronto, Ontario </span>
-                            <span class="linksAddressBreak">M5V2D5</span>
-                        </p>
+                        <div class="contact-linksEmail">
+                            <p><a href="mailto:contact@beachstays.com">info@email.com</a></p>  
+                        </div>
+
+                        <div class="contact-linksAddress">
+                            <p>123 - 456 - 7890</p>
+                            <p class="linksAddressMobile">123 Queen Street West, 
+                                <span class="linksAddressBreak">Unit 10 </span>
+                                <span class="linksAddressBreak">Toronto, Ontario </span>
+                                <span class="linksAddressBreak">M5V2D5</span>
+                            </p>
+                        </div>
+
                     </div>
 
                 </div>
