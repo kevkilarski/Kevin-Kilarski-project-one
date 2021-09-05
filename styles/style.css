@@ -813,7 +813,7 @@ CONTACT - HEADING
   height: 65vh;
 }
 
-.contact-header-cap {
+.general-cap {
   text-transform: capitalize;
 }
 
@@ -926,7 +926,7 @@ button[type=submit] {
   font-weight: 700;
 }
 
-.break {
+.general-break {
   display: block;
 }
 
@@ -950,14 +950,178 @@ BLOG - HEADING
 /* ======================
 BLOG - CONTENT
 =========================*/
-.blog-postContainer {
+.blog-postAndOurMission {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.blog-postAndCommentsContainer {
+  background-color: palegoldenrod;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 55%;
+          flex: 1 0 55%;
   padding: 0;
 }
 
-/* ======================
-BLOG - OUR MISSION
-=========================*/
-.blog-ourMission ul {
+.blog-ourMissionContainer {
+  background-color: lightcoral;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 26rem;
+          flex: 1 0 26rem;
+}
+
+.blog-postImgAndPost {
+  border-right: 0.25rem solid #50E3C2;
+  border-bottom: 0.25rem solid #50E3C2;
+}
+
+.blog-postAndCommentsContentWithSpace {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog-spacing {
+  background-color: blue;
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 18%;
+          flex: 1 0 18%;
+}
+
+.blog-postImgContainer img {
+  width: calc(100% - 0.9rem + 0.25rem);
+  -webkit-box-shadow: 0.9rem 0.9rem #50E3C2;
+          box-shadow: 0.9rem 0.9rem #50E3C2;
+  position: relative;
+  top: -10rem;
+}
+
+.blog-post {
+  margin: 0 10% 0 20%;
+}
+
+.blog-post h5 {
+  margin-top: -6.5rem;
+}
+
+.blog-postDate {
+  font-style: italic;
+  color: #063974;
+  letter-spacing: normal;
+}
+
+.blog-postDataAuthor {
+  font-weight: bold;
+}
+
+.blog-commentsContainer {
+  margin: 0 10% 0 20%;
+}
+
+.blog-post p:nth-of-type(1n+2) {
+  margin-top: 1.5rem;
+}
+
+.blog-post p:last-child {
+  margin-bottom: 2rem;
+}
+
+.blog-commentsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.blog-commentsContainer h6 {
+  margin-top: 2rem;
+}
+
+.blog-comments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: green;
+}
+
+.blog-commentsImgContainer {
+  background-color: red;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 5rem;
+          flex: 1 0 5rem;
+  margin-right: 2rem;
+}
+
+.blog-commentsText {
+  background-color: blue;
+}
+
+.blog-commentsText h6 {
+  margin: 0;
+  color: #063974;
+  font-size: 20px;
+  line-height: normal;
+  margin-bottom: 0.5rem;
+}
+
+.contact-formAndLinksContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: red;
+}
+
+.blog-formContainer {
+  height: 32rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 70%;
+          flex: 1 1 70%;
+  gap: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 5rem;
+}
+
+input[type=text],
+input[type=email] {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 35%;
+          flex: 1 0 35%;
+  height: 3rem;
+  padding: 1rem;
+  border: none;
+  border-bottom: 0.1rem solid #50E3C2;
+}
+
+textarea.contact-message {
+  resize: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  height: 65%;
+  padding: 1rem;
+  border: 0.1rem solid #50E3C2;
+}
+
+button[type=submit] {
+  width: 100%;
+  color: #FAFFFE;
+}
+
+.blog-ourMissionContainer ul {
   list-style: disc;
   padding-left: 2rem;
   font-weight: 400;
