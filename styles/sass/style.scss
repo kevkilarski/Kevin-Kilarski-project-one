@@ -40,8 +40,8 @@ BLOG - CONTENT
 }
 
 .blog-postAndCommentsContainer {
-    background-color: palegoldenrod;
-    flex: 1 0 55%;
+    // background-color: palegoldenrod;
+    flex: 1 0 58%;
 
     padding: 0;
 
@@ -53,8 +53,8 @@ BLOG - CONTENT
 }
 
 .blog-ourMissionContainer {
-    background-color: lightcoral;
-    flex: 1 0 26rem;
+    // background-color: lightcoral;
+    flex: 1 0 28rem;
 }
 
 
@@ -78,21 +78,24 @@ BLOG - CONTENT
 }
 
 .blog-spacing {
-    background-color: blue;
+    // background-color: blue;
     height: 100%;
     flex: 1 0 18%;
 }
 
 
-
+.blog-postImgContainer {
+    width: calc(100% - 0.9rem + 0.25rem);
+    // Filling it to container at 100%, then subtracting the spacing box shadow applies, then adding the border to the container
+    position: relative;
+    top: -9rem;
+}
 
 
 .blog-postImgContainer img {
-    width: calc(100% - 0.9rem + 0.25rem);
-        // Filling it to container at 100%, then subtracting the spacing box shadow applies, then adding the border to the container
     box-shadow: 0.9rem 0.9rem #50E3C2;
-    position: relative;
-    top: -10rem;
+    width: 100%;
+    max-width: 60rem;
 }
 
 
@@ -147,18 +150,18 @@ BLOG - CONTENT
 
 .blog-comments {
     display: flex;
-    background-color: green;
+    // background-color: green;
 }
 
 .blog-commentsImgContainer {
-    background-color: red;
+    // background-color: red;
     flex: 1 0 5rem;
     margin-right: 2rem;
 }
 
 
 .blog-commentsText {
-    background-color: blue;
+    // background-color: blue;
 }
 
 .blog-commentsText h6 {
@@ -176,7 +179,7 @@ BLOG - CONTENT
 .contact-formAndLinksContainer {
     display: flex;
     flex-wrap: wrap;
-    background-color: red;
+    // background-color: red;
 }
 
 .blog-formContainer {
@@ -211,10 +214,10 @@ input[type=email] {
     border-bottom: 0.1rem solid #50E3C2;
 }
 
-textarea.contact-message {
+textarea.blog-message {
     resize: none;
     flex: 1 0 100%;
-    height: 65%;
+    height: 12rem;
     padding: 1rem;
     
     border: 0.1rem solid #50E3C2;
@@ -230,10 +233,19 @@ button[type=submit] {
 
 
 
+.blog-ourMissionContainer {
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: column;
 
+    padding-left: 16%;
+}
 
-
-
+.blog-ourMissionImgContainer {
+    background: url("../assets/sidebar-image.jpg") center;
+    background-size: cover;
+    height: 22rem;
+}
 
 .blog-ourMissionContainer ul {
     list-style: disc;
@@ -241,7 +253,9 @@ button[type=submit] {
     font-weight: 400;
 }
 
-
+.blog-ourMissionContainer ul {
+    margin-bottom: 4rem;
+}
 
 
 // /* ======================

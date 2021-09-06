@@ -959,18 +959,16 @@ BLOG - CONTENT
 }
 
 .blog-postAndCommentsContainer {
-  background-color: palegoldenrod;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 55%;
-          flex: 1 0 55%;
+      -ms-flex: 1 0 58%;
+          flex: 1 0 58%;
   padding: 0;
 }
 
 .blog-ourMissionContainer {
-  background-color: lightcoral;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 26rem;
-          flex: 1 0 26rem;
+      -ms-flex: 1 0 28rem;
+          flex: 1 0 28rem;
 }
 
 .blog-postImgAndPost {
@@ -985,19 +983,23 @@ BLOG - CONTENT
 }
 
 .blog-spacing {
-  background-color: blue;
   height: 100%;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 18%;
           flex: 1 0 18%;
 }
 
-.blog-postImgContainer img {
+.blog-postImgContainer {
   width: calc(100% - 0.9rem + 0.25rem);
+  position: relative;
+  top: -9rem;
+}
+
+.blog-postImgContainer img {
   -webkit-box-shadow: 0.9rem 0.9rem #50E3C2;
           box-shadow: 0.9rem 0.9rem #50E3C2;
-  position: relative;
-  top: -10rem;
+  width: 100%;
+  max-width: 60rem;
 }
 
 .blog-post {
@@ -1049,19 +1051,13 @@ BLOG - CONTENT
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: green;
 }
 
 .blog-commentsImgContainer {
-  background-color: red;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 5rem;
           flex: 1 0 5rem;
   margin-right: 2rem;
-}
-
-.blog-commentsText {
-  background-color: blue;
 }
 
 .blog-commentsText h6 {
@@ -1078,7 +1074,6 @@ BLOG - CONTENT
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: red;
 }
 
 .blog-formContainer {
@@ -1106,12 +1101,12 @@ input[type=email] {
   border-bottom: 0.1rem solid #50E3C2;
 }
 
-textarea.contact-message {
+textarea.blog-message {
   resize: none;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 100%;
           flex: 1 0 100%;
-  height: 65%;
+  height: 12rem;
   padding: 1rem;
   border: 0.1rem solid #50E3C2;
 }
@@ -1121,8 +1116,30 @@ button[type=submit] {
   color: #FAFFFE;
 }
 
+.blog-ourMissionContainer {
+  padding-top: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 16%;
+}
+
+.blog-ourMissionImgContainer {
+  background: url("../assets/sidebar-image.jpg") center;
+  background-size: cover;
+  height: 22rem;
+}
+
 .blog-ourMissionContainer ul {
   list-style: disc;
   padding-left: 2rem;
   font-weight: 400;
+}
+
+.blog-ourMissionContainer ul {
+  margin-bottom: 4rem;
 }
