@@ -358,16 +358,14 @@ a {
   color: #063974;
 }
 
+.blog-ourMissionFindOut {
+  color: #0C5F4C;
+  font-weight: bold;
+}
+
 /* ======================
 GENERAL
 =========================*/
-.wrapper {
-  width: 85%;
-  max-width: 64rem;
-  margin: 0 auto;
-  height: 100%;
-}
-
 img {
   max-width: 100%;
 }
@@ -388,6 +386,22 @@ button {
 }
 
 button a {
+  color: #FAFFFE;
+}
+
+.wrapper {
+  width: 85%;
+  max-width: 64rem;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.fa-bars {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  font-size: 1.5rem;
+  visibility: hidden;
   color: #FAFFFE;
 }
 
@@ -980,6 +994,7 @@ BLOG - CONTAINER AND POST
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background-color: #FAFFFE;
 }
 
 .blog-postAndCommentsContainer {
@@ -1128,4 +1143,122 @@ BLOG - OUR MISSION
   content: "•";
   color: #50E3C2;
   margin: 0 0.5rem 0 -1.2rem;
+}
+
+/* ======================
+BLOG - MEDIA QUERIES
+=========================*/
+@media (max-width: 1350px) {
+  html {
+    background-color: red;
+  }
+
+  .blog-postAndImg {
+    border: none;
+  }
+
+  .blog-ImgContainer {
+    position: relative;
+    top: -9rem;
+    width: calc(100% - 0.9rem);
+  }
+
+  .blog-postContainer,
+.blog-commentsContainer,
+.blog-ourMissionContainer {
+    margin: 0 10%;
+  }
+
+  .blog-ImgContainer {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .blog-ImgContainer img {
+    width: 95%;
+    max-width: 60rem;
+    -webkit-box-shadow: 0.9rem 0.9rem #50E3C2;
+            box-shadow: 0.9rem 0.9rem #50E3C2;
+    margin: 0 auto;
+  }
+
+  .blog-postContainer p:last-child {
+    margin-bottom: 3rem;
+  }
+
+  .blog-formContainer {
+    margin-bottom: 3rem;
+  }
+
+  .blog-break {
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 0.25rem double #50E3C2;
+  }
+
+  .blog-ourMissionContainer {
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    padding: 3rem 8% 0 8%;
+  }
+
+  .blog-ourMissionImgContainer {
+    height: 20rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 940px) {
+  html {
+    background-color: blue;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    background-color: green;
+  }
+
+  .headerContent nav ul {
+    display: none;
+  }
+
+  .fa-bars {
+    visibility: visible;
+  }
+
+  .blog-ourMissionImgContainer {
+    height: 12rem;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    background-color: rebeccapurple;
+  }
+
+  .blog-comments {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .blog-commentsHeader {
+    margin: 1rem 0;
+  }
+
+  .blog-ourMissionImgContainer {
+    height: 8rem;
+  }
+}
+@media (max-width: 340px) {
+  html {
+    background-color: yellow;
+  }
 }

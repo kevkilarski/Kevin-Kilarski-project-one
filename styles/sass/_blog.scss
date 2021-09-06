@@ -24,6 +24,7 @@ BLOG - CONTAINER AND POST
 .blog-postAndOurMission {
     display: flex;
     flex-wrap: wrap;
+    background-color: #FAFFFE;
 }
 
 .blog-postAndCommentsContainer {
@@ -148,4 +149,126 @@ BLOG - OUR MISSION
     content: '\2022';
     color: #50E3C2;
     margin: 0 0.5rem 0 -1.2rem;
+}
+
+
+/* ======================
+BLOG - MEDIA QUERIES
+=========================*/
+
+@media (max-width: 1350px) {
+
+    html {
+        background-color: red;
+    }
+
+    .blog-postAndImg {
+        border: none;
+    }
+
+    .blog-ImgContainer {
+        position: relative;
+        top: -9rem;
+        width: calc(100% - 0.9rem);
+    }
+
+    .blog-postContainer,
+    .blog-commentsContainer,
+    .blog-ourMissionContainer {
+        margin: 0 10%;
+    }
+
+    .blog-ImgContainer {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .blog-ImgContainer img {
+        width: 95%;
+        max-width: 60rem;
+        box-shadow: 0.9rem 0.9rem #50E3C2;
+        margin: 0 auto;
+    }
+
+    .blog-postContainer p:last-child {
+        margin-bottom: 3rem;
+    }
+
+    .blog-formContainer {
+        margin-bottom: 3rem;
+    }
+
+    .blog-break {
+        width: 90%;
+        margin: 0 auto;
+        border-bottom: 0.25rem double #50E3C2;
+    }
+
+    .blog-ourMissionContainer {
+        flex-shrink: 1;
+        padding: 3rem 8% 0 8%;
+    }
+    
+    .blog-ourMissionImgContainer {
+        height: 20rem;
+        margin-bottom: 1rem;
+    }
+}
+
+
+@media (max-width: 940px) {
+
+    html {
+        background-color: blue;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    html {
+        background-color: green;
+    }
+
+    .headerContent nav ul {
+        display: none;
+    }
+
+    .fa-bars {
+        visibility: visible;
+    }
+
+    .blog-ourMissionImgContainer {
+        height: 12rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    html {
+        background-color: rebeccapurple;
+    }
+
+    .blog-comments {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-commentsHeader {
+        margin: 1rem 0;
+    }
+
+    .blog-ourMissionImgContainer {
+        height: 8rem;
+    }
+}
+
+
+@media (max-width: 340px) {
+
+    html {
+        background-color: yellow;
+    }
 }
