@@ -8,15 +8,6 @@ CONTACT - HEADING
     height: 65vh;
 }
 
-.general-cap {
-    text-transform: capitalize;
-}
-
-
-.headerTitle h2 {
-    color: #FAFFFE;
-}
-
 .contact-header nav ul li a.homeNav {
     color: #FAFFFE;
 }
@@ -26,58 +17,49 @@ CONTACT - HEADING
 }
 
 
-
 /* ======================
-CONTACT - FORM AND LINKS
+CONTACT - FORM
 =========================*/
 
 .contact-formAndLinks {
     padding: 0;
+    background-color: #FAFFFE;
 }
 
 .contact-formAndLinksContainer {
     display: flex;
     flex-wrap: wrap;
-    background-color: red;
+    gap: 2rem;
 }
 
 .contact-formContainer {
-    // background-color: blue;
-    background-color: #FAFFFE;;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 70%;
+    gap: 1.5rem;
     position: relative;
     top: -7em;
     left: -5%;
-
-    height: 32rem;
+    height: 30%;
     padding: 3rem;
-
-    flex: 1 1 70%;
-    gap: 1.5rem;
-
-    display: flex;
-    flex-wrap: wrap;
-
+    background-color: #FAFFFE;
     box-shadow: 0.9rem 0.9rem #50E3C2;
-
 }
 
-
-input[type=text],
-input[type=email] {
-    flex: 1 0 35%;
+.contact-formContainer input[type=text],
+.contact-formContainer input[type=email] {
+    flex: 1 0 10%;
     height: 3rem;
     padding: 1rem;
-
     border: none;
     border-bottom: 0.1rem solid #50E3C2;
 }
 
 textarea.contact-message {
-    resize: none;
     flex: 1 0 100%;
-    height: 65%;
+    height: 12rem;
     padding: 1rem;
-    
+    resize: none;
     border: 0.1rem solid #50E3C2;
 }
 
@@ -86,25 +68,21 @@ button[type=submit] {
     color: #FAFFFE;
 }
 
-
-
-
-
+/* ======================
+CONTACT - LINKS
+=========================*/
 
 .contact-linksContainer {
-    background-color: green;
-
-    flex: 1 1 13rem;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex: 1 1 10rem;
 }
 
 .contact-linksIcons {
     display: flex;
     justify-content: space-between;
-    width: 40%;
+    width: 45%;
 }
 
 .contact-linksEmail {
@@ -115,6 +93,86 @@ button[type=submit] {
     font-weight: 700;
 }
 
-.general-break {
-    display: block;
+
+/* ======================
+CONTACT - MEDIA QUERIES
+=========================*/
+
+@media (max-width: 958px) {
+    .contact-formAndLinksContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .contact-formContainer {
+        left: 0;
+    }
+
+    .contact-linksContainer {
+        margin: -5rem 0 3rem 0;
+        align-items: center;
+    }
+
+    .contact-linksIcons {
+        display: flex;
+        justify-content: space-between;
+        width: 10rem;
+    }
+
+    .contact-linksAddress {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .headerContent nav ul {
+        display: none;
+    }
+
+    .fa-bars {
+        visibility: visible;
+    }
+
+    .general-cap {
+        line-height: 6rem;
+    }
+
+    .blog-ourMissionImgContainer {
+        height: 12rem;
+    }
+
+    .contact-formContainer input[type=text],
+    .contact-formContainer input[type=email] {
+        flex: 0 1 100%;
+        width: 100%;
+    }
+
+    textarea.contact-message {
+        flex: 0 1 100%;
+        width: 2rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .contact-formContainer {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 0 1 auto;
+        gap: 1.5rem;
+        position: relative;
+        top: -7em;
+        left: 0;
+        height: 30%;
+        padding: 3rem;
+        background-color: #FAFFFE;
+        box-shadow: 0.9rem 0.9rem #50E3C2;
+    }
+
+    .contact-formContainer input[type=text],
+    .contact-formContainer input[type=email], 
+    textarea.contact-message {
+        padding: 0.2rem;
+    }
 }

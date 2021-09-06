@@ -99,8 +99,8 @@ BLOG - COMMENTS AND FORM
     margin-bottom: 5rem;
 }
 
-input[type=text],
-input[type=email] {
+.blog-formContainer input[type=text],
+.blog-formContainer input[type=email] {
     flex: 1 0 35%;
     height: 3rem;
     padding: 1rem;
@@ -157,11 +157,6 @@ BLOG - MEDIA QUERIES
 =========================*/
 
 @media (max-width: 1350px) {
-
-    html {
-        background-color: red;
-    }
-
     .blog-postAndImg {
         border: none;
     }
@@ -214,31 +209,10 @@ BLOG - MEDIA QUERIES
         height: 20rem;
         margin-bottom: 1rem;
     }
+
 }
-
-
-@media (max-width: 940px) {
-
-    html {
-        background-color: blue;
-    }
-}
-
 
 @media (max-width: 768px) {
-
-    html {
-        background-color: green;
-    }
-
-    .headerContent nav ul {
-        display: none;
-    }
-
-    .fa-bars {
-        visibility: visible;
-    }
-
     .blog-ourMissionImgContainer {
         height: 12rem;
     }
@@ -246,11 +220,6 @@ BLOG - MEDIA QUERIES
 
 
 @media (max-width: 480px) {
-
-    html {
-        background-color: rebeccapurple;
-    }
-
     .blog-comments {
         flex-direction: column;
         align-items: center;
@@ -262,13 +231,5 @@ BLOG - MEDIA QUERIES
 
     .blog-ourMissionImgContainer {
         height: 8rem;
-    }
-}
-
-
-@media (max-width: 340px) {
-
-    html {
-        background-color: yellow;
     }
 }

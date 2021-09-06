@@ -335,6 +335,10 @@ a {
   color: #2C2C2C;
 }
 
+.headerTitle h2 {
+  color: #FAFFFE;
+}
+
 .blog-postDate {
   font-style: italic;
   color: #063974;
@@ -403,6 +407,14 @@ button a {
   font-size: 1.5rem;
   visibility: hidden;
   color: #FAFFFE;
+}
+
+.general-break {
+  display: block;
+}
+
+.general-cap {
+  text-transform: capitalize;
 }
 
 /* ======================
@@ -843,20 +855,48 @@ footer p {
 }
 
 /* ======================
+MEDIA QUERIES
+=========================*/
+@media (max-width: 1350px) {
+  html {
+    background-color: red;
+  }
+}
+@media (max-width: 940px) {
+  html {
+    background-color: blue;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    background-color: green;
+  }
+
+  .headerContent nav ul {
+    display: none;
+  }
+
+  .fa-bars {
+    visibility: visible;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    background-color: rebeccapurple;
+  }
+}
+@media (max-width: 340px) {
+  html {
+    background-color: orange;
+  }
+}
+/* ======================
 CONTACT - HEADING
 =========================*/
 .contact-header {
   background: url("../assets/contact-image-1.jpg") center;
   background-size: cover;
   height: 65vh;
-}
-
-.general-cap {
-  text-transform: capitalize;
-}
-
-.headerTitle h2 {
-  color: #FAFFFE;
 }
 
 .contact-header nav ul li a.homeNav {
@@ -868,10 +908,11 @@ CONTACT - HEADING
 }
 
 /* ======================
-CONTACT - FORM AND LINKS
+CONTACT - FORM
 =========================*/
 .contact-formAndLinks {
   padding: 0;
+  background-color: #FAFFFE;
 }
 
 .contact-formAndLinksContainer {
@@ -880,34 +921,34 @@ CONTACT - FORM AND LINKS
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: red;
+  gap: 2rem;
 }
 
 .contact-formContainer {
-  background-color: #FAFFFE;
-  position: relative;
-  top: -7em;
-  left: -5%;
-  height: 32rem;
-  padding: 3rem;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 70%;
-          flex: 1 1 70%;
-  gap: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 70%;
+          flex: 1 1 70%;
+  gap: 1.5rem;
+  position: relative;
+  top: -7em;
+  left: -5%;
+  height: 30%;
+  padding: 3rem;
+  background-color: #FAFFFE;
   -webkit-box-shadow: 0.9rem 0.9rem #50E3C2;
           box-shadow: 0.9rem 0.9rem #50E3C2;
 }
 
-input[type=text],
-input[type=email] {
+.contact-formContainer input[type=text],
+.contact-formContainer input[type=email] {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 35%;
-          flex: 1 0 35%;
+      -ms-flex: 1 0 10%;
+          flex: 1 0 10%;
   height: 3rem;
   padding: 1rem;
   border: none;
@@ -915,12 +956,12 @@ input[type=email] {
 }
 
 textarea.contact-message {
-  resize: none;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 100%;
           flex: 1 0 100%;
-  height: 65%;
+  height: 12rem;
   padding: 1rem;
+  resize: none;
   border: 0.1rem solid #50E3C2;
 }
 
@@ -929,11 +970,10 @@ button[type=submit] {
   color: #FAFFFE;
 }
 
+/* ======================
+CONTACT - LINKS
+=========================*/
 .contact-linksContainer {
-  background-color: green;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 13rem;
-          flex: 1 1 13rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -944,6 +984,9 @@ button[type=submit] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 10rem;
+          flex: 1 1 10rem;
 }
 
 .contact-linksIcons {
@@ -953,7 +996,7 @@ button[type=submit] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 40%;
+  width: 45%;
 }
 
 .contact-linksEmail {
@@ -964,10 +1007,103 @@ button[type=submit] {
   font-weight: 700;
 }
 
-.general-break {
-  display: block;
-}
+/* ======================
+CONTACT - MEDIA QUERIES
+=========================*/
+@media (max-width: 958px) {
+  .contact-formAndLinksContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 2rem;
+  }
 
+  .contact-formContainer {
+    left: 0;
+  }
+
+  .contact-linksContainer {
+    margin: -5rem 0 3rem 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .contact-linksIcons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 10rem;
+  }
+
+  .contact-linksAddress {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .headerContent nav ul {
+    display: none;
+  }
+
+  .fa-bars {
+    visibility: visible;
+  }
+
+  .general-cap {
+    line-height: 6rem;
+  }
+
+  .blog-ourMissionImgContainer {
+    height: 12rem;
+  }
+
+  .contact-formContainer input[type=text],
+.contact-formContainer input[type=email] {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    width: 100%;
+  }
+
+  textarea.contact-message {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    width: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .contact-formContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    gap: 1.5rem;
+    position: relative;
+    top: -7em;
+    left: 0;
+    height: 30%;
+    padding: 3rem;
+    background-color: #FAFFFE;
+    -webkit-box-shadow: 0.9rem 0.9rem #50E3C2;
+            box-shadow: 0.9rem 0.9rem #50E3C2;
+  }
+
+  .contact-formContainer input[type=text],
+.contact-formContainer input[type=email],
+textarea.contact-message {
+    padding: 0.2rem;
+  }
+}
 /* ======================
 BLOG - HEADING
 =========================*/
@@ -1084,8 +1220,8 @@ BLOG - COMMENTS AND FORM
   margin-bottom: 5rem;
 }
 
-input[type=text],
-input[type=email] {
+.blog-formContainer input[type=text],
+.blog-formContainer input[type=email] {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 35%;
           flex: 1 0 35%;
@@ -1149,10 +1285,6 @@ BLOG - OUR MISSION
 BLOG - MEDIA QUERIES
 =========================*/
 @media (max-width: 1350px) {
-  html {
-    background-color: red;
-  }
-
   .blog-postAndImg {
     border: none;
   }
@@ -1212,33 +1344,12 @@ BLOG - MEDIA QUERIES
     margin-bottom: 1rem;
   }
 }
-@media (max-width: 940px) {
-  html {
-    background-color: blue;
-  }
-}
 @media (max-width: 768px) {
-  html {
-    background-color: green;
-  }
-
-  .headerContent nav ul {
-    display: none;
-  }
-
-  .fa-bars {
-    visibility: visible;
-  }
-
   .blog-ourMissionImgContainer {
     height: 12rem;
   }
 }
 @media (max-width: 480px) {
-  html {
-    background-color: rebeccapurple;
-  }
-
   .blog-comments {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1255,10 +1366,5 @@ BLOG - MEDIA QUERIES
 
   .blog-ourMissionImgContainer {
     height: 8rem;
-  }
-}
-@media (max-width: 340px) {
-  html {
-    background-color: yellow;
   }
 }
