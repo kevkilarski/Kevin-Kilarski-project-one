@@ -1,0 +1,151 @@
+/* ======================
+BLOG - HEADING
+=========================*/
+
+.blog-header {
+    background: url("../assets/blog-image-1.jpg") center;
+    background-size: cover;
+    height: 65vh;
+}
+
+.blog-header nav ul li a.homeNav {
+    color: #FAFFFE;
+}
+
+.blog-header nav ul li a.blogNav {
+    color: #50E3C2;
+}
+
+
+/* ======================
+BLOG - CONTAINER AND POST
+=========================*/
+
+.blog-postAndOurMission {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog-postAndCommentsContainer {
+    flex: 1 0 58%;
+    padding: 0;
+}
+
+.blog-postAndImg {
+    border-right: 0.25rem solid #50E3C2;
+    border-bottom: 0.25rem solid #50E3C2;
+}
+
+.blog-ImgContainer {
+    position: relative;
+    top: -9rem;
+    width: calc(100% - 0.9rem + 0.25rem);
+}
+
+.blog-ImgContainer img {
+    width: 100%;
+    max-width: 60rem;
+    box-shadow: 0.9rem 0.9rem #50E3C2;
+}
+
+.blog-postContainer,
+.blog-commentsContainer {
+    margin: 0 10% 0 20%
+}
+
+.blog-postContainer h5 {
+    margin-top: -6.5rem;
+}
+
+.blog-postContainer p:nth-of-type(1n+2) {
+    margin-top: 1.5rem;
+}
+
+.blog-postContainer p:last-child {
+    margin-bottom: 2rem;
+}
+
+
+/* ======================
+BLOG - COMMENTS AND FORM
+=========================*/
+
+.blog-commentsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.blog-commentsContainer h5 {
+    margin-top: 2rem;
+}
+
+.blog-comments {
+    display: flex;
+}
+
+.blog-commentsImgContainer {
+    flex: 1 0 5rem;
+    margin-right: 2rem;
+}
+
+.blog-formContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    flex: 1 1 70%;
+    height: 32rem;
+    margin-bottom: 5rem;
+}
+
+input[type=text],
+input[type=email] {
+    flex: 1 0 35%;
+    height: 3rem;
+    padding: 1rem;
+    border: none;
+    border-bottom: 0.1rem solid #50E3C2;
+}
+
+textarea.blog-message {
+    flex: 1 0 100%;
+    height: 12rem;
+    padding: 1rem;
+    border: 0.1rem solid #50E3C2;
+    resize: none;
+}
+
+button[type=submit] {
+    width: 100%;
+    color: #FAFFFE;
+}
+
+
+/* ======================
+BLOG - OUR MISSION
+=========================*/
+
+.blog-ourMissionContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 28rem;
+    padding: 6rem 0 0 16%;
+}
+
+.blog-ourMissionImgContainer {
+    background: url("../assets/sidebar-image.jpg") center;
+    background-size: cover;
+    height: 22rem;
+    margin-bottom: 0.5rem;
+}
+
+.blog-ourMissionPosts {
+    padding-left: 2rem;
+    margin-bottom: 4rem;
+}
+
+.blog-ourMissionPosts li::before {
+    content: '\2022';
+    color: #50E3C2;
+    margin: 0 0.5rem 0 -1.2rem;
+}

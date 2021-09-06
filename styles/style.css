@@ -219,7 +219,7 @@ textarea::-ms-input-placeholder {
   line-height: 1.6rem;
 }
 
-p, button, input, textarea::placeholder {
+p, button, li, input, textarea::placeholder {
   line-height: 32px;
   line-height: 1.6rem;
 }
@@ -296,7 +296,7 @@ textarea::-ms-input-placeholder {
   font-weight: 400;
 }
 
-p, input, textarea::placeholder {
+p, li, input, textarea::placeholder {
   letter-spacing: 2px;
   letter-spacing: 0.1rem;
   font-weight: 400;
@@ -335,6 +335,29 @@ a {
   color: #2C2C2C;
 }
 
+.blog-postDate {
+  font-style: italic;
+  color: #063974;
+  letter-spacing: normal;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.blog-postDataAuthor {
+  font-weight: bold;
+}
+
+.blog-commentsHeader {
+  color: #063974;
+  font-size: 20px;
+  line-height: normal;
+}
+
+.blog-ourMissionHeader {
+  font-size: 1.1rem;
+  color: #063974;
+}
+
 /* ======================
 GENERAL
 =========================*/
@@ -342,6 +365,7 @@ GENERAL
   width: 85%;
   max-width: 64rem;
   margin: 0 auto;
+  height: 100%;
 }
 
 img {
@@ -459,7 +483,7 @@ nav {
   text-transform: uppercase;
 }
 
-.titleGroup {
+.headerTitle {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -492,7 +516,7 @@ nav {
   position: relative;
 }
 
-.titleGroup h3 {
+.headerTitle h3 {
   display: block;
 }
 
@@ -817,7 +841,7 @@ CONTACT - HEADING
   text-transform: capitalize;
 }
 
-.titleGroup h2 {
+.headerTitle h2 {
   color: #FAFFFE;
 }
 
@@ -948,7 +972,7 @@ BLOG - HEADING
 }
 
 /* ======================
-BLOG - CONTENT
+BLOG - CONTAINER AND POST
 =========================*/
 .blog-postAndOurMission {
   display: -webkit-box;
@@ -965,73 +989,44 @@ BLOG - CONTENT
   padding: 0;
 }
 
-.blog-ourMissionContainer {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 28rem;
-          flex: 1 0 28rem;
-}
-
-.blog-postImgAndPost {
+.blog-postAndImg {
   border-right: 0.25rem solid #50E3C2;
   border-bottom: 0.25rem solid #50E3C2;
 }
 
-.blog-postAndCommentsContentWithSpace {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.blog-spacing {
-  height: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 18%;
-          flex: 1 0 18%;
-}
-
-.blog-postImgContainer {
-  width: calc(100% - 0.9rem + 0.25rem);
+.blog-ImgContainer {
   position: relative;
   top: -9rem;
+  width: calc(100% - 0.9rem + 0.25rem);
 }
 
-.blog-postImgContainer img {
-  -webkit-box-shadow: 0.9rem 0.9rem #50E3C2;
-          box-shadow: 0.9rem 0.9rem #50E3C2;
+.blog-ImgContainer img {
   width: 100%;
   max-width: 60rem;
+  -webkit-box-shadow: 0.9rem 0.9rem #50E3C2;
+          box-shadow: 0.9rem 0.9rem #50E3C2;
 }
 
-.blog-post {
-  margin: 0 10% 0 20%;
-}
-
-.blog-post h5 {
-  margin-top: -6.5rem;
-}
-
-.blog-postDate {
-  font-style: italic;
-  color: #063974;
-  letter-spacing: normal;
-}
-
-.blog-postDataAuthor {
-  font-weight: bold;
-}
-
+.blog-postContainer,
 .blog-commentsContainer {
   margin: 0 10% 0 20%;
 }
 
-.blog-post p:nth-of-type(1n+2) {
+.blog-postContainer h5 {
+  margin-top: -6.5rem;
+}
+
+.blog-postContainer p:nth-of-type(1n+2) {
   margin-top: 1.5rem;
 }
 
-.blog-post p:last-child {
+.blog-postContainer p:last-child {
   margin-bottom: 2rem;
 }
 
+/* ======================
+BLOG - COMMENTS AND FORM
+=========================*/
 .blog-commentsContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1043,7 +1038,7 @@ BLOG - CONTENT
   gap: 2rem;
 }
 
-.blog-commentsContainer h6 {
+.blog-commentsContainer h5 {
   margin-top: 2rem;
 }
 
@@ -1060,33 +1055,17 @@ BLOG - CONTENT
   margin-right: 2rem;
 }
 
-.blog-commentsText h6 {
-  margin: 0;
-  color: #063974;
-  font-size: 20px;
-  line-height: normal;
-  margin-bottom: 0.5rem;
-}
-
-.contact-formAndLinksContainer {
+.blog-formContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.blog-formContainer {
-  height: 32rem;
+  gap: 1.5rem;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 70%;
           flex: 1 1 70%;
-  gap: 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  height: 32rem;
   margin-bottom: 5rem;
 }
 
@@ -1102,13 +1081,13 @@ input[type=email] {
 }
 
 textarea.blog-message {
-  resize: none;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 100%;
           flex: 1 0 100%;
   height: 12rem;
   padding: 1rem;
   border: 0.1rem solid #50E3C2;
+  resize: none;
 }
 
 button[type=submit] {
@@ -1116,8 +1095,10 @@ button[type=submit] {
   color: #FAFFFE;
 }
 
+/* ======================
+BLOG - OUR MISSION
+=========================*/
 .blog-ourMissionContainer {
-  padding-top: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1125,21 +1106,26 @@ button[type=submit] {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 16%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 28rem;
+          flex: 1 0 28rem;
+  padding: 6rem 0 0 16%;
 }
 
 .blog-ourMissionImgContainer {
   background: url("../assets/sidebar-image.jpg") center;
   background-size: cover;
   height: 22rem;
+  margin-bottom: 0.5rem;
 }
 
-.blog-ourMissionContainer ul {
-  list-style: disc;
+.blog-ourMissionPosts {
   padding-left: 2rem;
-  font-weight: 400;
+  margin-bottom: 4rem;
 }
 
-.blog-ourMissionContainer ul {
-  margin-bottom: 4rem;
+.blog-ourMissionPosts li::before {
+  content: "•";
+  color: #50E3C2;
+  margin: 0 0.5rem 0 -1.2rem;
 }

@@ -19,7 +19,7 @@ h2, h3, h4, h5, h6 {
     @include lineHeight(58);
 }
 
-p, button, input, textarea::placeholder {
+p, button, li, input, textarea::placeholder {
     @include lineHeight(32);
 }
 
@@ -59,7 +59,7 @@ button, nav {
     @include letterSpacing(1);
 }
 
-p, input, textarea::placeholder {
+p, li, input, textarea::placeholder {
     @include letterSpacing(2);
     font-weight: 400;
 }
@@ -81,6 +81,28 @@ a {
     color: #2C2C2C;
 }
 
+.blog-postDate {
+    font-style: italic;
+    color: #063974;
+    letter-spacing: normal;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.blog-postDataAuthor {
+    font-weight: bold;
+}
+
+.blog-commentsHeader {
+    color: #063974;
+    font-size: 20px;
+    line-height: normal;
+}
+
+.blog-ourMissionHeader {
+    font-size: 1.1rem;
+    color: #063974;
+}
 
 
 
