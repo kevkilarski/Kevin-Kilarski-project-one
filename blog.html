@@ -21,14 +21,15 @@
 
                 <nav>
                     <span class="logo">Beachstays</span>
-                    <ul>
+                    <label for="navMobileMenu"><i class="fa fa-bars"></i></label>
+                    <input type="checkbox" id="navMobileMenu" name="toggle" />
+                    <ul class="headerLinks">
                         <li><a href="./index.html" class="homeNav">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="./blog.html" class="blogNav">Blog</a></li>
                         <li><a href="./contact.html" class="contactNav">Contact</a></li>
                     </ul>
                 </nav>
-                <i class="fa fa-bars"></i>
                 <div class="headerTitle">
                     <h2>Blog</h2>
                 </div>
@@ -48,7 +49,7 @@
                 
                 <div class="blog-postContainer">
                     <h5>Five days of ocean seas</h5>
-                    <p class="blog-postDate">Monday January 21st, 2019 by <span class="blog-postDataAuthor">Bora</span></p>
+                    <p class="blog-postDate"><em>Monday January 21st, 2019 by <span class="blog-postDataAuthor"><strong>Bora</strong></span></em></p>
                     <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam.</p>
                     <p>In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat. Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacu.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id,viverra eget nibh. Suspendisse luctus mattis cursus. Nam consectetur ante at nisl hendrerit gravida. Donec vehicula rhoncus mattis. Mauris dignissim semper mattis. Fusce porttitor a mi at suscipit.</p>
@@ -83,18 +84,18 @@
                     </div>
                 </div>
     
-                <form action="#" method="POST" class="blog-formContainer" name="contact-form">
+                <form action="#" method="POST" class="blog-formContainer" name="blog-form">
 
-                    <input type="text" class="contact-name" id="name" name="name" placeholder="Name" required>
+                    <input type="text" class="blog-name" id="name" name="name" placeholder="Name" required>
                     <label for="name" class="sr-only">Name</label>
 
-                    <input type="email" class="contact-email" id="email" name="email" placeholder="Email Address" required>
+                    <input type="email" class="blog-email" id="email" name="email" placeholder="Email Address" required>
                     <label for="email" class="sr-only">Email address</label>
 
                     <textarea name="message" class="blog-message" id="message" placeholder="Comment"></textarea>
                     <label for="message" class="sr-only"></label>
 
-                    <button type="submit" class="contact-button">post comment</button>
+                    <button type="submit" class="blog-button">post comment</button>
                     
                 </form>
             </div>

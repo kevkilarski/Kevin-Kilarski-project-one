@@ -164,7 +164,7 @@ INDEX - PLAN AHEAD
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    flex: 1 0 27rem;
+    flex: 1 0 34rem;
 }
 
 .planAheadItems p {
@@ -175,22 +175,22 @@ INDEX - PLAN AHEAD
     width: 10rem;
 }
 
-.planAheadText,
+.planAheadText1,
 .planAheadImg2 {
     margin-left: 15%;
 }
 
-.planAheadText,
+.planAheadText1,
 .planAheadImg1 {
     margin-bottom: 4%;
 }
 
-.planAheadItems.newLocationsText {
+.planAheadText2 {
     justify-content: flex-start;
     align-items: flex-end;
 }
 
-.planAheadItems.newLocationsText p {
+.planAheadText2 p {
     text-align: right;
     padding: 1rem 0 1rem 45%;
 }
@@ -272,41 +272,38 @@ footer p {
 INDEX - MEDIA QUERIES
 =========================*/
 
-@media (max-width: 1287px) {
-    // html {
-    //     background-color: red;
-    // }
-
+@media (max-width: 1620px) {
     .planAheadContainer {
         flex-direction: column;
-        padding: 5%;
+        padding: 5% 5% 0 5%;
     }
 
     .planAheadItems {
         justify-content: center;
         align-items: center;
+        flex: 1 0 25rem;
     }
 
     .planAheadItems p {
         padding: 1.2rem 15%;
     }
 
-    .planAheadItems.newLocationsText {
+    .planAheadText2 {
         justify-content: center;
         align-items: center;
     }
 
-    .planAheadItems.newLocationsText p {
+    .planAheadText2 p {
         text-align: left;
         padding: 1.2rem 15%;
     }
 
-    .planAheadText,
+    .planAheadText1,
     .planAheadImg2 {
         margin-left: 0;
     }
     
-    .planAheadText,
+    .planAheadText1,
     .planAheadImg1 {
         margin-bottom: 0;
     }
@@ -321,9 +318,19 @@ INDEX - MEDIA QUERIES
         width: 100%;
     }
 
-    .newLocationsText {
+    .planAheadText2 {
         order: 1;
     }
+}
+
+
+
+@media (max-width: 1287px) {
+    // html {
+    //     background-color: red;
+    // }
+
+    
 }
 
 
@@ -420,7 +427,7 @@ INDEX - MEDIA QUERIES
         padding: 1.2rem 5%;
     }
 
-    .planAheadItems.newLocationsText p {
+    .planAheadText2 p {
         padding: 1.2rem 5%;
     }
 }

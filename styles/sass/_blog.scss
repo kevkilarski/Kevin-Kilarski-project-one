@@ -159,7 +159,7 @@ BLOG - OUR MISSION
 BLOG - MEDIA QUERIES
 =========================*/
 
-@media (max-width: 1350px) {
+@media (max-width: 1354px) {
     .blog-postAndImg {
         border: none;
     }
@@ -194,13 +194,13 @@ BLOG - MEDIA QUERIES
     }
 
     .blog-formContainer {
-        margin-bottom: 3rem;
+        margin: 2rem 0 3rem 0;
     }
 
     .blog-break {
         width: 90%;
         margin: 0 auto;
-        border-bottom: 0.25rem double #50E3C2;
+        border-bottom: 0.25rem solid #50E3C2;
     }
 
     .blog-ourMissionContainer {
