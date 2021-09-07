@@ -1,5 +1,5 @@
 /* ======================
-HEADING
+INDEX - HEADING
 =========================*/
 
 header {
@@ -11,8 +11,8 @@ header {
 .headerContent {
     display: flex;
     flex-direction: column;
-    padding-top: 1rem;
     justify-content: space-between;
+    padding-top: 1rem;
     height: 100%;
 }
 
@@ -52,12 +52,6 @@ header h3 {
     text-transform: lowercase;
 }
 
-.title {
-    margin-bottom: 11rem;
-    z-index: 1;
-
-}
-
 .title h3 {
     color: #0C5F4C;
 }
@@ -67,47 +61,26 @@ header h3 {
     color: #063974;
 }
 
-nav {
-    text-transform: uppercase;
-}
-
-
 .headerTitle {
-    // border: 1px solid red;
-    height: 100%;
     display: flex;
-
     align-items: center;
+    height: 100%;
 }
 
-.titleBackdrop {
-    // background-color: red;
+.titleLeft {
     height: 100%;
     width: 40%;
 }
 
 .titleLogo {
-    // background-color: blue;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-
     position: relative;
-}
-
-.headerTitle h3 {
-    display: block;
+    height: 100%;
 }
 
 .titlePrefix {
-    text-transform: lowercase;
-    font-family: 'Lato', sans-serif;
-    @include fontSize(62);
-    @include letterSpacing(6.7);
-    @include lineHeight(58);
-    color: #0C5F4C;
     margin-left: 0.5rem;
 }
 
@@ -118,55 +91,21 @@ nav {
 }
 
 .titleSunglasses {
-    position: absolute;
     background: url("../assets/header-box.jpg") center;
     background-size: cover;
-
-    height: 35rem;
-    width: 42rem;
-
-    left: -36rem;
+    position: absolute;
+    left: -29rem;
     bottom: -6rem;
+    height: 32rem;
+    width: 35rem;
 }
 
 
-
-
-
-
-
-
-
-// .titleContainer:before {
-//     content: '';
-//     position: absolute;
-//     background: url("../assets/header-box.jpg") center;
-//     background-size: cover;
-//     background-repeat: no-repeat;
-
-//     width: 34.5rem;
-//     height: 32rem;
-//     left: -10rem;
-//     bottom: -6rem;
-//     z-index: 0;
-// }
-
-// .titleContainer {
-//     display: flex;
-//     position: relative;
-// }
-
-// .titlegap {
-//     height: 100px;
-//     width: 30%;
-// }
-
-
 /* ======================
-VISIT GUYANA
+INDEX - VISIT GUYANA
 =========================*/
 
-section.visitGuyana {
+.visitGuyana {
     background-color: #FAFFFE;
     padding-top: 9rem;
 }
@@ -174,6 +113,7 @@ section.visitGuyana {
 .visitGuyanaContainer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .visitGuyanaText p {
@@ -190,23 +130,8 @@ section.visitGuyana {
 }
 
 
-// .visitGuyanaImg::before {
-//     content: '';
-//     position: absolute;
-//     background-color:#50E3C2;
-//     width: 100%;
-//     height: 90%;
-//     left: -1rem;
-//     bottom: 0.8rem;
-//     z-index: -1;
-//     left: rem;
-// }
-
-
-
-
 /* ======================
-THREE IMAGES
+INDEX - THREE IMAGES
 =========================*/
 
 .threeImages {
@@ -216,52 +141,47 @@ THREE IMAGES
 .threeImagesContainer {
     display: flex;
     justify-content: space-between;
+    align-content: flex-start;
     flex-wrap: wrap;
     gap: 1.5rem;
-    align-content: flex-start;
 }
 
 .threeImagesItems {
-    flex: 1 0 16rem;
+    flex: 1 1 16rem;
     height: 20rem;
 }
 
 .threeImages1 {
     background: url("../assets/gallery-image1.jpg") center;
-    // background-color: red;
     background-size: cover;
 }
 
 .threeImages2 {
     background: url("../assets/gallery-image2.jpg") center;
-    // background-color: blue;
     background-size: cover;
 }
 
 .threeImages3 {
     background: url("../assets/gallery-image3.jpg") center;
-    // background-color: green;
     background-size: cover;
 }
 
 
-
 /* ======================
-MIDPAGE
+INDEX - MIDPAGE
 =========================*/
 
 .midpage {
     background-color: #FAFFFE;
+    padding: 5rem 0;
 }
 
 .midpageContainer {
     display: flex;
-    // border: 1px solid red;
     flex-wrap: wrap;
 }
 
 .midpageItems {
-    // border: 1px dotted blue;
     display: flex;
     align-items: flex-start;
     flex: 1 0 48%;
@@ -270,16 +190,14 @@ MIDPAGE
 }
 
 .midpageItems i {
-    margin-top: 0.6rem;
-    margin-right: 1rem;
-
-    color: #FAFFFE;
-    border-radius: 50%;
     background-color: #50E3C2;
-    padding: 0.45rem;
-
+    color: #FAFFFE;
     position: relative;
     z-index: 1;
+    border-radius: 50%;
+    padding: 0.45rem;
+    margin-top: 0.6rem;
+    margin-right: 1rem;
 }
 
 .midpageIconFile i {
@@ -289,21 +207,19 @@ MIDPAGE
 
 .midpageIconFile i::after {
     content: '';
-    position: absolute;
-    width: 2rem;
-    height: 2rem;
     background-color: #50E3C2;
+    position: absolute;
     top: 0;
     left: 0;
-    border-radius: 50%;
     z-index: -1;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
 }
 
 
-
-
 /* ======================
-PLAN AHEAD
+INDEX - PLAN AHEAD
 =========================*/
 
 .planAhead {
@@ -312,23 +228,15 @@ PLAN AHEAD
 }
 
 .planAheadContainer {
-    // border: 1px solid red;
     display: flex;
     flex-wrap: wrap;
 }
 
 .planAheadItems {
-    // border: 1px dotted blue;
-    flex: 1 0 27rem;
-
-    // flex: 1 0 36%;
-    // flex: 1 0 33rem;
-    // max-width: 30rem;
-    // min-width: 10rem;
-
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    flex: 1 0 27rem;
 }
 
 .planAheadItems p {
@@ -339,19 +247,15 @@ PLAN AHEAD
     width: 10rem;
 }
 
-
 .planAheadText,
 .planAheadImg2 {
-    // margin-left: 13rem;
     margin-left: 15%;
 }
 
 .planAheadText,
 .planAheadImg1 {
-    // margin-bottom: 5rem;
     margin-bottom: 4%;
 }
-
 
 .planAheadItems.newLocationsText {
     justify-content: flex-start;
@@ -363,63 +267,44 @@ PLAN AHEAD
     padding: 1rem 0 1rem 45%;
 }
 
-
-
-
-
 .planAheadImg1 {
     background: url("../assets/left-image.jpg") center;
     background-size: cover;
-    background-color: red;
-    width: 40rem;
-    height: 20rem;
-
-    box-shadow: 0.9rem 0.9rem #50E3C2;
-
     position: relative;
     top: -1.5rem;
+    width: 40rem;
+    height: 20rem;
+    box-shadow: 0.9rem 0.9rem #50E3C2;
 }
 
 .planAheadImg2 {
     background: url("../assets/right-image.jpg") center;
     background-size: cover;
-    background-color: red;
-    width: 40rem;
-    height: 20rem;
-
-    box-shadow: -0.9rem 0.9rem #50E3C2;
     position: relative;
     bottom: -1.5rem;
+    width: 40rem;
+    height: 20rem;
+    box-shadow: -0.9rem 0.9rem #50E3C2;
 }
 
 
-
 /* ======================
-BOTTOM SPAN IMAGE
+INDEX - BOTTOM SPAN IMAGE
 =========================*/
 
 .bottomSpanImg {
-    height: 20rem;
     background: url("../assets/banner-image.jpg") center;
     background-size: cover;
+    height: 20rem;
 }
 
 
-
-
-
-
 /* ======================
-FREE TRIP
+INDEX - FREE TRIP
 =========================*/
 
 .freeTrip {
     background-color: #D2F9F1;
-    height: 40rem;
-    // border: 1px dotted blue;
-}
-
-.freeTrip .wrapper {
     height: 100%;
 }
 
@@ -429,7 +314,6 @@ FREE TRIP
     align-items: center;
     justify-content: center;
     height: 100%;
-    // border: 1px solid red;
 }
 
 .freeTripContainer button {
@@ -438,12 +322,8 @@ FREE TRIP
 
 .freeTripContainer p {
     text-align: center;
-    padding: 1rem 6rem;;
+    padding: 1rem 10%;
 }
-
-
-
-
 
 
 /* ======================
@@ -460,9 +340,159 @@ footer p {
 }
 
 
+/* ======================
+INDEX - MEDIA QUERIES
+=========================*/
+
+@media (max-width: 1287px) {
+    // html {
+    //     background-color: red;
+    // }
+
+    .planAheadContainer {
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .planAheadItems {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .planAheadItems p {
+        padding: 1.2rem 15%;
+    }
+
+    .planAheadItems.newLocationsText {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .planAheadItems.newLocationsText p {
+        text-align: left;
+        padding: 1.2rem 15%;
+    }
+
+    .planAheadText,
+    .planAheadImg2 {
+        margin-left: 0;
+    }
+    
+    .planAheadText,
+    .planAheadImg1 {
+        margin-bottom: 0;
+    }
+
+    .planAheadImg1 {
+        top: 0;
+        width: 100%;
+    }
+
+    .planAheadImg2 {
+        bottom: 0;
+        width: 100%;
+    }
+
+    .newLocationsText {
+        order: 1;
+    }
+}
 
 
+@media (max-width: 940px) {
+    // html {
+    //     background-color: blue;
+    // }
 
-@import '_mediaQueries';
+    .titleLeft,
+    .titleSunglasses {
+        display: none;
+    }
 
-// Add media query for anything above a certain width for the plan ahead section.  Work on solution later.
+    .titlePrefix {
+        font-size: 60px;
+    }
+
+    .titleLogo h1 {
+        text-align: center;
+        font-size: 90px;
+    }
+
+    .visitGuyanaContainer {
+        flex-direction: column;
+    }
+
+    .visitGuyanaText {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+
+}
+
+
+@media (max-width: 768px) {
+    // html {
+    //     background-color: green;
+    // }
+
+    .index-header {
+        height: 60vh;
+    }
+
+    .titlePrefix {
+        font-size: 40px;
+    }
+
+    .titleLogo h1 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .freeTripContainer h5{
+        text-align: center;
+    }
+
+    .freeTripContainer p {
+        padding: 1rem 5%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    // html {
+    //     background-color: rebeccapurple;
+    // }
+
+    .titlePrefix {
+        font-size: 30px;
+    }
+
+    .titleLogo h1 {
+        font-size: 42px;
+        line-height: 60px;
+    }
+
+    .threeImagesItems {
+        height: 15rem;
+    }
+
+    .midpageItems {
+        min-width: 100%;
+    }
+
+    .planAheadItems p {
+        padding: 1.2rem 5%;
+    }
+
+    .planAheadItems.newLocationsText p {
+        padding: 1.2rem 5%;
+    }
+}
+
+
+@media (max-width: 340px) {
+    // html {
+    //     background-color: orange;
+    // }
+}

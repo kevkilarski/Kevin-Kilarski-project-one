@@ -81,8 +81,21 @@ a {
     color: #2C2C2C;
 }
 
+nav {
+    text-transform: uppercase;
+}
+
 .headerTitle h2 {
     color: #FAFFFE;
+}
+
+.titlePrefix {
+    text-transform: lowercase;
+    font-family: 'Lato', sans-serif;
+    @include fontSize(62);
+    @include letterSpacing(6.7);
+    @include lineHeight(58);
+    color: #0C5F4C;
 }
 
 .blog-postDate {
