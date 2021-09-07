@@ -1,5 +1,5 @@
 /* ======================
-CONTACT - HEADING
+CONTACT - HEADER
 =========================*/
 
 .contact-header {
@@ -14,6 +14,10 @@ CONTACT - HEADING
 
 .contact-header nav ul li a.contactNav {
     color: #50E3C2;
+}
+
+.headerTitle h2 {
+    color: #FAFFFE;
 }
 
 
@@ -126,14 +130,6 @@ CONTACT - MEDIA QUERIES
 }
 
 @media (max-width: 768px) {
-    .headerContent nav ul {
-        display: none;
-    }
-
-    .fa-bars {
-        visibility: visible;
-    }
-
     .general-cap {
         line-height: 6rem;
     }

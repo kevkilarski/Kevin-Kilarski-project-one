@@ -33,12 +33,16 @@ button a {
 }
 
 .fa-bars {
-    position: absolute;
-    top: 1.2rem;
-    right: 1.2rem;
+    // position: absolute;
+    // top: 1.2rem;
+    // right: 1.2rem;
     font-size: 1.5rem;
     visibility: hidden;
     color: #FAFFFE;
+}
+
+input[type=checkbox] {
+    display: none;
 }
 
 .general-break {

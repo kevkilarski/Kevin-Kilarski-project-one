@@ -85,8 +85,9 @@ nav {
     text-transform: uppercase;
 }
 
-.headerTitle h2 {
-    color: #FAFFFE;
+header .logo,
+header h3 {
+    text-transform: lowercase;
 }
 
 .titlePrefix {
@@ -96,6 +97,11 @@ nav {
     @include letterSpacing(6.7);
     @include lineHeight(58);
     color: #0C5F4C;
+}
+
+.titleLogo h1 {
+    line-height: 5rem;
+    color: #063974;
 }
 
 .blog-postDate {
