@@ -8,14 +8,22 @@
     // 4. I found some difficulty in structuring the typography and general partials, specifically what to include in each.  Certain pages had elements that required styling that could be generalized to the webpage overall, such as the date for each comment post.  It seemed to fit within the dimensions of the partial, rather than the individual page itself, but I am open to learning if this could be changed.
     // 5. I was conflicted on my feelings regarding where to place styling decisions that were not included in the style guide (e.g. the date of the 'Five days of ocean seas' post in the blog section).  I spoke with Owen about this and he suggested that placing this in the blog partial, as opposed to the typography partial, might make the most sense considering this is only being used on one page.  I did as such.  If this could be changed (maybe placing it at the top of the blog partial, before styling the header?), just let me know.
     // 6. I tried using a partial for global header properties, with adjustments to the header featured within the respective partial of a page.  I was going to do so with forms, but was unsure about this up to submission.  I like the efficiency, but would it be better served as a mixin?  And if it does work as it's own partial, is it placed in the style.scss as I have done?
+    // 7. The code could absolutely be drier.  Any tips would be really appreciated!
 
 @import '_setup.scss';
+@import '_vars.scss';
 @import '_mixins.scss';
 
 @import '_stylingTypography.scss';
 @import '_stylingGeneral.scss';
+
 @import '_header.scss';
 
 @import '_index.scss';
+@import '_indexMediaQueries.scss';
+
 @import '_contact.scss';
+@import '_contactMediaQueries.scss';
+
 @import '_blog.scss';
+@import '_blogMediaQueries.scss';

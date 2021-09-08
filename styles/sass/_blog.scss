@@ -9,12 +9,12 @@ BLOG - HEADER
     min-height: 30rem;
 }
 
-.blog-header nav ul li a.homeNav {
-    color: #FAFFFE;
+.blog-header .homeNav {
+    color: $iceBlue;
 }
 
-.blog-header nav ul li a.blogNav {
-    color: #50E3C2;
+.blog-header .blogNav {
+    color: $greenishCyan;
 }
 
 
@@ -25,7 +25,7 @@ BLOG - CONTAINER AND POST
 .blog-postAndOurMission {
     display: flex;
     flex-wrap: wrap;
-    background-color: #FAFFFE;
+    background-color: $iceBlue;
 }
 
 .blog-postAndCommentsContainer {
@@ -60,7 +60,7 @@ BLOG - CONTAINER AND POST
 
 .blog-postDate {
     letter-spacing: normal;
-    color: #063974;
+    color: $twilightBlue;
 }
 
 .blog-postContainer p:nth-of-type(1n+2) {
@@ -99,7 +99,7 @@ BLOG - COMMENTS AND FORM
     @include fontSize(20);
     line-height: normal;
     margin-bottom: 0.3rem;
-    color: #063974;
+    color: $twilightBlue;
 }
 
 .blog-formContainer {
@@ -130,7 +130,7 @@ textarea.blog-message {
 
 button[type=submit] {
     width: 100%;
-    color: #FAFFFE;
+    color: $iceBlue;
 }
 
 
@@ -154,12 +154,12 @@ BLOG - OUR MISSION
 
 .blog-ourMissionHeader {
     @include fontSize(25);
-    color: #063974;
+    color: $twilightBlue;
 }
 
 .blog-ourMissionFindOut {
     font-weight: 600;
-    color: #0C5F4C;
+    color: $spruce;
 }
 
 .blog-ourMissionPosts {
@@ -171,94 +171,5 @@ BLOG - OUR MISSION
 .blog-ourMissionPosts li::before {
     content: '\2022';
     margin: 0 0.5rem 0 -1.2rem;
-    color: #50E3C2;
-}
-
-
-/* ======================
-BLOG - MEDIA QUERIES
-=========================*/
-
-@media (max-width: 1354px) {
-    .blog-postAndImg {
-        border: none;
-    }
-
-    .blog-ImgContainer {
-        position: relative;
-        top: -9rem;
-        width: calc(100% - 0.9rem);
-    }
-
-    .blog-postContainer,
-    .blog-commentsContainer,
-    .blog-ourMissionContainer {
-        margin: 0 10%;
-    }
-
-    .blog-ImgContainer {
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-    }
-
-    .blog-ImgContainer img {
-        width: 95%;
-        max-width: 60rem;
-        box-shadow: 0.9rem 0.9rem #50E3C2;
-        margin: 0 auto;
-    }
-
-    .blog-postContainer p:last-child {
-        margin-bottom: 3rem;
-    }
-
-    .blog-formContainer {
-        margin: 2rem 0 3rem 0;
-    }
-
-    .blog-break {
-        width: 90%;
-        margin: 0 auto;
-        border-bottom: 0.25rem solid #50E3C2;
-    }
-
-    .blog-ourMissionContainer {
-        flex-shrink: 1;
-        padding: 3rem 8% 0 8%;
-    }
-    
-    .blog-ourMissionImgContainer {
-        height: 20rem;
-        margin-bottom: 1rem;
-    }
-
-}
-
-@media (max-width: 768px) {
-    .headerTitle h2 {
-        display: block;
-        text-align: center;
-        width: 100%;
-    }
-
-    .blog-ourMissionImgContainer {
-        height: 12rem;
-    }
-}
-
-
-@media (max-width: 480px) {
-    .blog-comments {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .blog-commentsHeader {
-        margin: 1rem 0;
-    }
-
-    .blog-ourMissionImgContainer {
-        height: 8rem;
-    }
+    color: $greenishCyan;
 }

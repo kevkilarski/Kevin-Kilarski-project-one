@@ -24,22 +24,22 @@ header {
     z-index: 1;
 }
 
-.headerContent nav ul {
+.headerContent ul {
     display: flex;
     justify-content: space-between;
     flex: 3 1 1rem;
     margin-left: 1rem;
 }
 
-.headerContent nav ul li a {
-    color: #FAFFFE;
+.headerContent a {
+    color: $iceBlue;
 }
 
 .headerTitle {
     display: flex;
     align-items: center;
     height: 100%;
-    color: #FAFFFE;
+    color: $iceBlue;
 }
 
 .headerTitle .general-capitalize {
@@ -64,7 +64,7 @@ MEDIA QUERIES
         z-index: 10;
         overflow: hidden;
         height: 0;
-        background-color: #063974;
+        background-color: $twilightBlue;
         opacity: 0.9;
     }
 
@@ -75,7 +75,7 @@ MEDIA QUERIES
 
     .headerLinks li:hover,
     .headerLinks li:focus {
-        background-color: #0C5F4C;    
+        background-color: $spruce;    
     }
 
     .headerLinks li a {
@@ -86,7 +86,7 @@ MEDIA QUERIES
     input[type=checkbox]:checked + .headerLinks {
         height: auto;
         width: 100%;
-        background-color: #063974;
+        background-color: $twilightBlue;
     }
 
     label[for=navMobileMenu] {

@@ -321,7 +321,7 @@ input, textarea::placeholder {
   font-weight: 300;
 }
 
-.logo, button, nav {
+.logo, button, nav, footer {
   text-align: center;
 }
 
@@ -334,8 +334,17 @@ a {
   color: #2C2C2C;
 }
 
+button a {
+  color: #FAFFFE;
+}
+
 nav {
   text-transform: uppercase;
+}
+
+footer {
+  color: #FAFFFE;
+  background-color: #2C2C2C;
 }
 
 .general-capitalize {
@@ -359,10 +368,6 @@ button {
   border: none;
   background: #063974;
   padding: 0.4rem 0.9rem;
-}
-
-button a {
-  color: #FAFFFE;
 }
 
 .wrapper {
@@ -427,7 +432,7 @@ header {
   z-index: 1;
 }
 
-.headerContent nav ul {
+.headerContent ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -440,7 +445,7 @@ header {
   margin-left: 1rem;
 }
 
-.headerContent nav ul li a {
+.headerContent a {
   color: #FAFFFE;
 }
 
@@ -513,7 +518,7 @@ MEDIA QUERIES
 /* ======================
 INDEX - HEADER
 =========================*/
-.headerContent nav ul li a.homeNav {
+.headerContent .homeNav {
   color: #50E3C2;
 }
 
@@ -832,18 +837,6 @@ INDEX - FREE TRIP
 }
 
 /* ======================
-FOOTER
-=========================*/
-footer {
-  color: #FAFFFE;
-  background-color: #2C2C2C;
-}
-
-footer p {
-  text-align: center;
-}
-
-/* ======================
 INDEX - MEDIA QUERIES
 =========================*/
 @media (max-width: 1620px) {
@@ -1012,11 +1005,223 @@ CONTACT - HEADER
   min-height: 30rem;
 }
 
-.contact-header nav ul li a.homeNav {
+.contact-header .homeNav {
   color: #FAFFFE;
 }
 
-.contact-header nav ul li a.contactNav {
+.contact-header .contactNav {
+  color: #50E3C2;
+}
+
+/* ======================
+CONTACT - FORM
+=========================*/
+.contact-formAndLinks {
+  padding: 0;
+  background-color: #FAFFFE;
+}
+
+.contact-formAndLinksContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contact-formContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 70%;
+          flex: 1 1 70%;
+  gap: 1.5rem;
+  position: relative;
+  top: -7em;
+  left: -5%;
+  height: 30%;
+  padding: 3rem;
+  background-color: #FAFFFE;
+  -webkit-box-shadow: 0.9rem 0.9rem #50E3C2;
+          box-shadow: 0.9rem 0.9rem #50E3C2;
+}
+
+.contact-formContainer input[type=text],
+.contact-formContainer input[type=email] {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 10%;
+          flex: 1 0 10%;
+  height: 3rem;
+  padding: 1rem;
+  border: none;
+  border-bottom: 0.1rem solid #50E3C2;
+}
+
+textarea.contact-message {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  height: 12rem;
+  padding: 1rem;
+  resize: none;
+  border: 0.1rem solid #50E3C2;
+}
+
+button[type=submit] {
+  width: 100%;
+  color: #FAFFFE;
+}
+
+/* ======================
+CONTACT - LINKS
+=========================*/
+.contact-linksContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 10rem;
+          flex: 1 1 10rem;
+}
+
+.contact-linksIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 45%;
+}
+
+.contact-linksEmail {
+  margin: 1rem 0;
+}
+
+.contact-linksEmail a {
+  font-weight: 600;
+}
+
+/* ======================
+CONTACT - MEDIA QUERIES
+=========================*/
+@media (max-width: 962px) {
+  .contact-formAndLinksContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .contact-formContainer {
+    left: 0;
+  }
+
+  .contact-linksContainer {
+    margin: -5rem 0 3rem 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .contact-linksIcons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 10rem;
+  }
+
+  .contact-linksAddress {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .headerTitle h2 {
+    text-align: center;
+  }
+
+  .blog-ourMissionImgContainer {
+    height: 12rem;
+  }
+
+  .contact-formContainer input[type=text],
+.contact-formContainer input[type=email] {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    width: 100%;
+  }
+
+  textarea.contact-message {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    width: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .headerTitle h2 {
+    font-size: 80px;
+    font-size: 4rem;
+  }
+
+  .contact-formContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    gap: 1.5rem;
+    position: relative;
+    top: -7em;
+    left: 0;
+    height: 30%;
+    padding: 3rem;
+    background-color: #FAFFFE;
+    -webkit-box-shadow: 0.9rem 0.9rem #50E3C2;
+            box-shadow: 0.9rem 0.9rem #50E3C2;
+  }
+
+  .contact-formContainer input[type=text],
+.contact-formContainer input[type=email],
+textarea.contact-message {
+    padding: 0.2rem;
+  }
+}
+/* ======================
+CONTACT - HEADER
+=========================*/
+.contact-header {
+  background: url("../assets/contact-image-1.jpg") center;
+  background-size: cover;
+  height: 65vh;
+  min-height: 30rem;
+}
+
+.contact-header .homeNav {
+  color: #FAFFFE;
+}
+
+.contact-header .contactNav {
   color: #50E3C2;
 }
 
@@ -1224,11 +1429,306 @@ BLOG - HEADER
   min-height: 30rem;
 }
 
-.blog-header nav ul li a.homeNav {
+.blog-header .homeNav {
   color: #FAFFFE;
 }
 
-.blog-header nav ul li a.blogNav {
+.blog-header .blogNav {
+  color: #50E3C2;
+}
+
+/* ======================
+BLOG - CONTAINER AND POST
+=========================*/
+.blog-postAndOurMission {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #FAFFFE;
+}
+
+.blog-postAndCommentsContainer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 58%;
+          flex: 1 0 58%;
+  padding: 0;
+}
+
+.blog-postAndImg {
+  border-right: 0.25rem solid #50E3C2;
+  border-bottom: 0.25rem solid #50E3C2;
+}
+
+.blog-ImgContainer {
+  position: relative;
+  top: -9rem;
+  width: calc(100% - 0.9rem + 0.25rem);
+}
+
+.blog-ImgContainer img {
+  width: 100%;
+  -webkit-box-shadow: 0.9rem 0.9rem #50E3C2;
+          box-shadow: 0.9rem 0.9rem #50E3C2;
+}
+
+.blog-postContainer,
+.blog-commentsContainer {
+  margin: 0 10% 0 20%;
+}
+
+.blog-postContainer h5 {
+  margin-top: -6.5rem;
+}
+
+.blog-postDate {
+  letter-spacing: normal;
+  color: #063974;
+}
+
+.blog-postContainer p:nth-of-type(1n+2) {
+  margin-top: 1.5rem;
+}
+
+.blog-postContainer p:last-child {
+  margin-bottom: 2rem;
+}
+
+/* ======================
+BLOG - COMMENTS AND FORM
+=========================*/
+.blog-commentsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.blog-commentsContainer h5 {
+  margin-top: 2rem;
+}
+
+.blog-comments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog-commentsImgContainer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 5rem;
+          flex: 1 0 5rem;
+  margin-right: 2rem;
+}
+
+.blog-commentsHeader {
+  font-size: 20px;
+  font-size: 1rem;
+  line-height: normal;
+  margin-bottom: 0.3rem;
+  color: #063974;
+}
+
+.blog-formContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.5rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 70%;
+          flex: 1 1 70%;
+  height: 32rem;
+  margin-bottom: 5rem;
+}
+
+.blog-formContainer input[type=text],
+.blog-formContainer input[type=email] {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 35%;
+          flex: 1 0 35%;
+  height: 3rem;
+  padding: 1rem;
+  border: none;
+  border-bottom: 0.1rem solid #50E3C2;
+}
+
+textarea.blog-message {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  height: 12rem;
+  padding: 1rem;
+  border: 0.1rem solid #50E3C2;
+  resize: none;
+}
+
+button[type=submit] {
+  width: 100%;
+  color: #FAFFFE;
+}
+
+/* ======================
+BLOG - OUR MISSION
+=========================*/
+.blog-ourMissionContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 28rem;
+          flex: 1 0 28rem;
+  padding: 6rem 0 0 16%;
+}
+
+.blog-ourMissionImgContainer {
+  background: url("../assets/sidebar-image.jpg") center;
+  background-size: cover;
+  height: 22rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-ourMissionHeader {
+  font-size: 25px;
+  font-size: 1.25rem;
+  color: #063974;
+}
+
+.blog-ourMissionFindOut {
+  font-weight: 600;
+  color: #0C5F4C;
+}
+
+.blog-ourMissionPosts {
+  font-weight: 400;
+  padding-left: 2rem;
+  margin-bottom: 4rem;
+}
+
+.blog-ourMissionPosts li::before {
+  content: "•";
+  margin: 0 0.5rem 0 -1.2rem;
+  color: #50E3C2;
+}
+
+/* ======================
+BLOG - MEDIA QUERIES
+=========================*/
+@media (max-width: 1354px) {
+  .blog-postAndImg {
+    border: none;
+  }
+
+  .blog-ImgContainer {
+    position: relative;
+    top: -9rem;
+    width: calc(100% - 0.9rem);
+  }
+
+  .blog-postContainer,
+.blog-commentsContainer,
+.blog-ourMissionContainer {
+    margin: 0 10%;
+  }
+
+  .blog-ImgContainer {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .blog-ImgContainer img {
+    width: 95%;
+    max-width: 60rem;
+    -webkit-box-shadow: 0.9rem 0.9rem #50E3C2;
+            box-shadow: 0.9rem 0.9rem #50E3C2;
+    margin: 0 auto;
+  }
+
+  .blog-postContainer p:last-child {
+    margin-bottom: 3rem;
+  }
+
+  .blog-formContainer {
+    margin: 2rem 0 3rem 0;
+  }
+
+  .blog-break {
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 0.25rem solid #50E3C2;
+  }
+
+  .blog-ourMissionContainer {
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    padding: 3rem 8% 0 8%;
+  }
+
+  .blog-ourMissionImgContainer {
+    height: 20rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .headerTitle h2 {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .blog-ourMissionImgContainer {
+    height: 12rem;
+  }
+}
+@media (max-width: 480px) {
+  .blog-comments {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .blog-commentsHeader {
+    margin: 1rem 0;
+  }
+
+  .blog-ourMissionImgContainer {
+    height: 8rem;
+  }
+}
+/* ======================
+BLOG - HEADER
+=========================*/
+.blog-header {
+  background: url("../assets/blog-image-1.jpg") center;
+  background-size: cover;
+  height: 65vh;
+  min-height: 30rem;
+}
+
+.blog-header .homeNav {
+  color: #FAFFFE;
+}
+
+.blog-header .blogNav {
   color: #50E3C2;
 }
 
