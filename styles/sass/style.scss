@@ -3,6 +3,8 @@
 // Notes for marking:
     // 1. I converted the navigation bar into a 'hamburger menu' and made use of a previous lecture I attended in the Juno Accelerated Web Development class.
     // 2. I tried to follow a BEM type of naming convention, using 'blog-' and 'contact-' to denote when elements were targeted for these specific pages.  Elements for the home page did not include this.  After completing this project, I see that including 'index-' on certain elements would be beneficial.  Any feedback on whether this is a wise convention overall would be appreciated -- it made sense to me but I can change!
+    // 3. I chose not to add mixins to the margins and padding of the page, though this could be added in retrospect.  I simply lacked the time to do this afterwards.
+    // 4. I found some difficulty in structuring the typography and general partials, specifically what to include in each.  Certain pages had elements that required styling that could be generalized to the webpage overall, such as the date for each comment post.  It seemed to fit within the dimensions of the partial, rather than the individual page itself, but I am open to learning if this could be changed.
 
 @import '_setup';
 @import '_stylingTypography';

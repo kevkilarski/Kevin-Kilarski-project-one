@@ -1,7 +1,7 @@
 header {
     background: url("../assets/home-image-1.jpg") center;
     background-size: cover;
-    height: 80vh;
+    height: 60vh;
 }
 
 .headerContent {
@@ -21,16 +21,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 
 .headerContent nav ul {
     display: flex;
     justify-content: space-between;
     flex: 3 1 1rem;
-    margin-left: 1rem;
-}
-
-.headerContent nav ul li {
     margin-left: 1rem;
 }
 
@@ -54,7 +51,7 @@ MEDIA QUERIES
         visibility: visible;
     }
 
-    .headerContent nav ul {
+    .headerLinks {
         flex-direction: column;
         position: absolute;
         top: 4rem;
@@ -66,8 +63,9 @@ MEDIA QUERIES
         opacity: 0.9;
     }
 
-    .headerContent nav ul li {
+    .headerLinks li {
         margin-left: 0;
+        transition: all 0.1s;
     }
 
     .headerLinks li:hover,

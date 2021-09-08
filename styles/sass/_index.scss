@@ -36,8 +36,9 @@ INDEX - HEADER
     position: absolute;
     left: -42rem;
     bottom: -6rem;
-    height: 100%;
+    height: 48rem;
     width: 48rem;
+    z-index: 0;
 }
 
 
@@ -132,20 +133,17 @@ INDEX - MIDPAGE
 .midpageItems i {
     position: relative;
     z-index: 1;
-    border-radius: 50%;
     padding: 0.45rem;
     margin-top: 0.6rem;
     margin-right: 1rem;
-    background-color: #50E3C2;
     color: #FAFFFE;
 }
 
 .midpageIconFile i {
-    padding-left: 0.7rem;
-    background-color: unset;
+    padding-left: 0.65rem;
 }
 
-.midpageIconFile i::after {
+.midpageItems i::after {
     content: '';
     position: absolute;
     top: 0;
@@ -372,7 +370,7 @@ INDEX - MEDIA QUERIES
 
 @media (max-width: 768px) {
     .index-header {
-        height: 60vh;
+        height: 70vh;
     }
 
     .titlePrefix {
