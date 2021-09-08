@@ -2,18 +2,16 @@
 INDEX - HEADER
 =========================*/
 
-@import '_header.scss';
-
 .headerContent nav ul li a.homeNav {
     color: #50E3C2;
 }
 
-.titleLeft {
+.index-titleGap {
     height: 100%;
     width: 40%;
 }
 
-.titleLogo {
+.index-titleContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,15 +19,23 @@ INDEX - HEADER
     height: 100%;
 }
 
-.titlePrefix {
+.index-titlePrefix {
+    font-family: 'Lato', sans-serif;
+    @include fontSize(62);
+    @include letterSpacing(6.7);
+    @include lineHeight(58);
+    text-transform: lowercase;
     margin-left: 0.5rem;
+    color: #0C5F4C;
 }
 
-.titleLogo h1 {
+.index-titleContainer h1 {
+    @include lineHeight(100);
     z-index: 1;
+    color: #063974;
 }
 
-.titleSunglasses {
+.index-titleSunglasses {
     background: url("../assets/header-box.jpg") center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -46,27 +52,27 @@ INDEX - HEADER
 INDEX - VISIT GUYANA
 =========================*/
 
-.visitGuyana {
+.index-visitGuyana {
     padding-top: 9rem;
     background-color: #FAFFFE;
 }
 
-.visitGuyanaContainer {
+.index-visitGuyanaContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.visitGuyanaText p {
+.index-visitGuyanaText p {
     padding: 1rem 0;
 }
 
-.visitGuyanaImg {
+.index-visitGuyanaImg {
     flex-shrink: 0;
     margin-left: 10%;
 }
 
-.visitGuyanaImg img {
+.index-visitGuyanaImg img {
     box-shadow: -0.9rem 0.9rem #50E3C2;
 }
 
@@ -75,11 +81,11 @@ INDEX - VISIT GUYANA
 INDEX - THREE IMAGES
 =========================*/
 
-.threeImages {
+.index-threeImages {
     background-color: #D2F9F1;
 }
 
-.threeImagesContainer {
+.index-threeImagesContainer {
     display: flex;
     justify-content: space-between;
     align-content: flex-start;
@@ -87,22 +93,22 @@ INDEX - THREE IMAGES
     gap: 1.5rem;
 }
 
-.threeImagesItems {
+.index-threeImagesItems {
     flex: 1 1 16rem;
     height: 20rem;
 }
 
-.threeImages1 {
+.index-threeImages1 {
     background: url("../assets/gallery-image1.jpg") center;
     background-size: cover;
 }
 
-.threeImages2 {
+.index-threeImages2 {
     background: url("../assets/gallery-image2.jpg") center;
     background-size: cover;
 }
 
-.threeImages3 {
+.index-threeImages3 {
     background: url("../assets/gallery-image3.jpg") center;
     background-size: cover;
 }
@@ -112,17 +118,17 @@ INDEX - THREE IMAGES
 INDEX - MIDPAGE
 =========================*/
 
-.midpage {
+.index-midpage {
     padding: 5rem 0;
     background-color: #FAFFFE;
 }
 
-.midpageContainer {
+.index-midpageContainer {
     display: flex;
     flex-wrap: wrap;
 }
 
-.midpageItems {
+.index-midpageItems {
     display: flex;
     align-items: flex-start;
     flex: 1 0 48%;
@@ -130,7 +136,7 @@ INDEX - MIDPAGE
     margin-bottom: 1rem;
 }
 
-.midpageItems i {
+.index-midpageItems i {
     position: relative;
     z-index: 1;
     padding: 0.45rem;
@@ -139,11 +145,11 @@ INDEX - MIDPAGE
     color: #FAFFFE;
 }
 
-.midpageIconFile i {
+.index-midpageItems .fa-file {
     padding-left: 0.65rem;
 }
 
-.midpageItems i::after {
+.index-midpageItems i::after {
     content: '';
     position: absolute;
     top: 0;
@@ -160,52 +166,52 @@ INDEX - MIDPAGE
 INDEX - PLAN AHEAD
 =========================*/
 
-.planAhead {
+.index-planAhead {
     padding: 0;
     background-color: #D2F9F1;
 }
 
-.planAheadContainer {
+.index-planAheadContainer {
     display: flex;
     flex-wrap: wrap;
 }
 
-.planAheadItems {
+.index-planAheadItems {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     flex: 1 0 34rem;
 }
 
-.planAheadItems p {
+.index-planAheadItems p {
     padding: 1rem 45% 1rem 0;
 }
 
-.planAheadItems button {
+.index-planAheadItems button {
     width: 10rem;
 }
 
-.planAheadText1,
-.planAheadImg2 {
+.index-planAheadText1,
+.index-planAheadImg2 {
     margin-left: 15%;
 }
 
-.planAheadText1,
-.planAheadImg1 {
+.index-planAheadText1,
+.index-planAheadImg1 {
     margin-bottom: 4%;
 }
 
-.planAheadText2 {
+.index-planAheadText2 {
     justify-content: flex-start;
     align-items: flex-end;
 }
 
-.planAheadText2 p {
+.index-planAheadText2 p {
     text-align: right;
     padding: 1rem 0 1rem 45%;
 }
 
-.planAheadImg1 {
+.index-planAheadImg1 {
     background: url("../assets/left-image.jpg") center;
     background-size: cover;
     position: relative;
@@ -215,7 +221,7 @@ INDEX - PLAN AHEAD
     box-shadow: 0.9rem 0.9rem #50E3C2;
 }
 
-.planAheadImg2 {
+.index-planAheadImg2 {
     background: url("../assets/right-image.jpg") center;
     background-size: cover;
     position: relative;
@@ -230,7 +236,7 @@ INDEX - PLAN AHEAD
 INDEX - BOTTOM SPAN IMAGE
 =========================*/
 
-.bottomSpanImg {
+.index-bottomSpanImg {
     background: url("../assets/banner-image.jpg") center;
     background-size: cover;
     height: 20rem;
@@ -241,12 +247,12 @@ INDEX - BOTTOM SPAN IMAGE
 INDEX - FREE TRIP
 =========================*/
 
-.freeTrip {
+.index-freeTrip {
     height: 100%;
     background-color: #D2F9F1;
 }
 
-.freeTripContainer {
+.index-freeTripContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -254,13 +260,13 @@ INDEX - FREE TRIP
     height: 100%;
 }
 
-.freeTripContainer button {
-    padding: 0.5rem 1rem;
-}
-
-.freeTripContainer p {
+.index-freeTripContainer p {
     text-align: center;
     padding: 1rem 10%;
+}
+
+.index-freeTripContainer button {
+    padding: 0.5rem 1rem;
 }
 
 
@@ -283,85 +289,85 @@ INDEX - MEDIA QUERIES
 =========================*/
 
 @media (max-width: 1620px) {
-    .planAheadContainer {
+    .index-planAheadContainer {
         flex-direction: column;
         padding: 5% 5% 0 5%;
     }
 
-    .planAheadItems {
+    .index-planAheadItems {
         justify-content: center;
         align-items: center;
         flex: 1 0 25rem;
     }
 
-    .planAheadItems p {
+    .index-planAheadItems p {
         padding: 1.2rem 15%;
     }
 
-    .planAheadText2 {
+    .index-planAheadText2 {
         justify-content: center;
         align-items: center;
     }
 
-    .planAheadText2 p {
+    .index-planAheadText2 p {
         text-align: left;
         padding: 1.2rem 15%;
     }
 
-    .planAheadText1,
-    .planAheadImg2 {
+    .index-planAheadText1,
+    .index-planAheadImg2 {
         margin-left: 0;
     }
     
-    .planAheadText1,
-    .planAheadImg1 {
+    .index-planAheadText1,
+    .index-planAheadImg1 {
         margin-bottom: 0;
     }
 
-    .planAheadImg1 {
+    .index-planAheadImg1 {
         top: 0;
         width: 100%;
     }
 
-    .planAheadImg2 {
+    .index-planAheadImg2 {
         bottom: 0;
         width: 100%;
     }
 
-    .planAheadText2 {
+    .index-planAheadText2 {
         order: 1;
     }
 }
 
 @media (max-width: 940px) {
-    .titleLeft,
-    .titleSunglasses {
+    .index-titleGap,
+    .index-titleSunglasses {
         display: none;
     }
 
-    .titlePrefix {
+    .index-titlePrefix {
         @include fontSize(60);
     }
 
-    .titleLogo h1 {
+    .index-titleContainer h1 {
         text-align: center;
         @include fontSize(90);
     }
 
-    .visitGuyana {
+    .index-visitGuyana {
         padding-top: 5rem;
     }
 
-    .visitGuyanaContainer {
+    .index-visitGuyanaContainer {
         flex-direction: column;
     }
 
-    .visitGuyanaText {
+    .index-visitGuyanaText {
         text-align: center;
         margin-bottom: 3rem;
     }
 
-    .visitGuyanaImg {
+    .index-visitGuyanaImg {
         margin-left: 0;
     }
 
@@ -373,48 +379,48 @@ INDEX - MEDIA QUERIES
         height: 70vh;
     }
 
-    .titlePrefix {
+    .index-titlePrefix {
         @include fontSize(40);
     }
 
-    .titleLogo h1 {
+    .index-titleContainer h1 {
         @include fontSize(60);
         @include lineHeight(60);
     }
 
-    .freeTripContainer h5{
+    .index-freeTripContainer h5{
         text-align: center;
     }
 
-    .freeTripContainer p {
+    .index-freeTripContainer p {
         padding: 1rem 5%;
     }
 }
 
 
 @media (max-width: 480px) {
-    .titlePrefix {
+    .index-titlePrefix {
         @include fontSize(30);
     }
 
-    .titleLogo h1 {
+    .index-titleContainer h1 {
         @include fontSize(42);
         @include lineHeight(60);
     }
 
-    .threeImagesItems {
+    .index-threeImagesItems {
         height: 15rem;
     }
 
-    .midpageItems {
+    .index-midpageItems {
         min-width: 100%;
     }
 
-    .planAheadItems p {
+    .index-planAheadItems p {
         padding: 1.2rem 5%;
     }
 
-    .planAheadText2 p {
+    .index-planAheadText2 p {
         padding: 1.2rem 5%;
     }
 }

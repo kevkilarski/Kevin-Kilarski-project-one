@@ -69,6 +69,7 @@ button[type=submit] {
     color: #FAFFFE;
 }
 
+
 /* ======================
 CONTACT - LINKS
 =========================*/
@@ -88,6 +89,10 @@ CONTACT - LINKS
 
 .contact-linksEmail {
     margin: 1rem 0;
+}
+
+.contact-linksEmail a {
+    font-weight: 600;
 }
 
 

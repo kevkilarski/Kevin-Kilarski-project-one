@@ -58,6 +58,11 @@ BLOG - CONTAINER AND POST
     margin-top: -6.5rem;
 }
 
+.blog-postDate {
+    letter-spacing: normal;
+    color: #063974;
+}
+
 .blog-postContainer p:nth-of-type(1n+2) {
     margin-top: 1.5rem;
 }
@@ -90,8 +95,11 @@ BLOG - COMMENTS AND FORM
     margin-right: 2rem;
 }
 
-.blog-commentsText h6 {
+.blog-commentsHeader {
+    @include fontSize(20);
+    line-height: normal;
     margin-bottom: 0.3rem;
+    color: #063974;
 }
 
 .blog-formContainer {
@@ -144,7 +152,18 @@ BLOG - OUR MISSION
     margin-bottom: 0.5rem;
 }
 
+.blog-ourMissionHeader {
+    @include fontSize(25);
+    color: #063974;
+}
+
+.blog-ourMissionFindOut {
+    font-weight: 600;
+    color: #0C5F4C;
+}
+
 .blog-ourMissionPosts {
+    font-weight: 400;
     padding-left: 2rem;
     margin-bottom: 4rem;
 }

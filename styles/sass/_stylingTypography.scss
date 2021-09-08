@@ -1,5 +1,3 @@
-@import '_mixins.scss';
-
 html {
     font-family: 'Lato', sans-serif;
     font-size: 125%;
@@ -11,12 +9,7 @@ h1, .logo, button {
     font-family: 'Playfair Display SC', serif;
 }
 
-.titlePrefix {
-    font-family: 'Lato', sans-serif;
-    text-transform: lowercase;
-}
-
-h2, h3, h4, h5, h6, .titlePrefix {
+h2, h3, h4, h5, h6 {
     @include lineHeight(58);
 }
 
@@ -41,7 +34,7 @@ h2 {
     @include letterSpacing(9);
 }
 
-h3, .titlePrefix {
+h3 {
     @include fontSize(62);
     @include letterSpacing(6.7);
 }
@@ -62,7 +55,7 @@ h6 {
     @include letterSpacing(3.2);
 }
 
-p, li, input, textarea::placeholder {
+p, input, textarea::placeholder {
     @include letterSpacing(2);
     font-weight: 400;
 }
@@ -88,42 +81,6 @@ nav {
     text-transform: uppercase;
 }
 
-.blog-postDate {
-    letter-spacing: normal;
-}
-
-.titleLogo h1 {
-    @include lineHeight(100);
-}
-
-.blog-commentsHeader {
-    @include fontSize(20);
-    line-height: normal;
-}
-
-.blog-ourMissionHeader {
-    @include fontSize(25);
-}
-
-.blog-ourMissionFindOut,
-.contact-linksEmail a {
-    font-weight: 600;
-}
-
-.general-cap {
+.general-capitalize {
     text-transform: capitalize;
-    line-height: 6rem;
-}
-
-.headerTitle h2 {
-    color: #FAFFFE;
-}
-
-.titleLogo h1, .blog-postDate,
-.blog-commentsHeader, .blog-ourMissionHeader {
-    color: #063974;
-}
-
-.titlePrefix, .blog-ourMissionFindOut {
-    color: #0C5F4C;
 }
