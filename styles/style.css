@@ -180,9 +180,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
-/* ======================
-TYPOGRAPHY
-=========================*/
 html {
   font-family: "Lato", sans-serif;
   font-size: 125%;
@@ -194,7 +191,12 @@ h1, .logo, button {
   font-family: "Playfair Display SC", serif;
 }
 
-h2, h3, h4, h5, h6 {
+.titlePrefix {
+  font-family: "Lato", sans-serif;
+  text-transform: lowercase;
+}
+
+h2, h3, h4, h5, h6, .titlePrefix {
   line-height: 58px;
   line-height: 2.9rem;
 }
@@ -224,6 +226,11 @@ p, button, li, input, textarea::placeholder {
   line-height: 1.6rem;
 }
 
+button, nav {
+  letter-spacing: 1px;
+  letter-spacing: 0.05rem;
+}
+
 nav {
   line-height: 29px;
   line-height: 1.45rem;
@@ -241,7 +248,7 @@ h2 {
   letter-spacing: 0.45rem;
 }
 
-h3 {
+h3, .titlePrefix {
   font-size: 62px;
   font-size: 3.1rem;
   letter-spacing: 6.7px;
@@ -258,6 +265,8 @@ h4, h5 {
 .logo {
   font-size: 34.6px;
   font-size: 1.73rem;
+  text-transform: lowercase;
+  color: #50E3C2;
 }
 
 h6 {
@@ -265,11 +274,6 @@ h6 {
   font-size: 1.5rem;
   letter-spacing: 3.2px;
   letter-spacing: 0.16rem;
-}
-
-button, nav {
-  letter-spacing: 1px;
-  letter-spacing: 0.05rem;
 }
 
 textarea::-webkit-input-placeholder {
@@ -339,54 +343,49 @@ nav {
   text-transform: uppercase;
 }
 
-header .logo,
-header h3 {
-  text-transform: lowercase;
-}
-
-.titlePrefix {
-  text-transform: lowercase;
-  font-family: "Lato", sans-serif;
-  font-size: 62px;
-  font-size: 3.1rem;
-  letter-spacing: 6.7px;
-  letter-spacing: 0.335rem;
-  line-height: 58px;
-  line-height: 2.9rem;
-  color: #0C5F4C;
+.blog-postDate {
+  letter-spacing: normal;
 }
 
 .titleLogo h1 {
+  line-height: 100px;
   line-height: 5rem;
-  color: #063974;
-}
-
-.blog-postDate {
-  color: #063974;
-  letter-spacing: normal;
-  font-size: 1rem;
-  font-weight: normal;
 }
 
 .blog-commentsHeader {
-  color: #063974;
   font-size: 20px;
+  font-size: 1rem;
   line-height: normal;
 }
 
 .blog-ourMissionHeader {
-  font-size: 1.1rem;
+  font-size: 25px;
+  font-size: 1.25rem;
+}
+
+.blog-ourMissionFindOut,
+.contact-linksEmail a {
+  font-weight: 600;
+}
+
+.general-cap {
+  text-transform: capitalize;
+  line-height: 6rem;
+}
+
+.headerTitle h2 {
+  color: #FAFFFE;
+}
+
+.titleLogo h1, .blog-postDate,
+.blog-commentsHeader, .blog-ourMissionHeader {
   color: #063974;
 }
 
-.blog-ourMissionFindOut {
+.titlePrefix, .blog-ourMissionFindOut {
   color: #0C5F4C;
-  font-weight: bold;
 }
 
-/* ======================
-GENERAL
-=========================*/
 img {
   max-width: 100%;
 }
@@ -431,15 +430,8 @@ input[type=checkbox] {
   display: block;
 }
 
-.general-cap {
-  text-transform: capitalize;
-}
-
 /* ======================
 INDEX - HEADER
-=========================*/
-/* ======================
-HEADER
 =========================*/
 header {
   background: url("../assets/home-image-1.jpg") center;
@@ -467,7 +459,6 @@ header {
       -ms-flex: 1 3 25rem;
           flex: 1 3 25rem;
   text-align: left;
-  color: #50E3C2;
 }
 
 .headerContent nav {
@@ -513,6 +504,59 @@ header {
   height: 100%;
 }
 
+/* ======================
+MEDIA QUERIES
+=========================*/
+@media (max-width: 768px) {
+  .fa-bars {
+    visibility: visible;
+  }
+
+  .headerContent nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    z-index: 10;
+    overflow: hidden;
+    height: 0;
+    background-color: #063974;
+    opacity: 0.9;
+  }
+
+  .headerContent nav ul li {
+    margin-left: 0;
+  }
+
+  .headerLinks li:hover,
+.headerLinks li:focus {
+    background-color: #0C5F4C;
+  }
+
+  .headerLinks li a {
+    display: block;
+    width: 100%;
+  }
+
+  input[type=checkbox]:checked + .headerLinks {
+    height: auto;
+    width: 100%;
+    background-color: #063974;
+  }
+
+  label[for=navMobileMenu] {
+    position: fixed;
+    right: 1rem;
+    top: 1.1rem;
+  }
+}
+.headerContent nav ul li a.homeNav {
+  color: #50E3C2;
+}
+
 .titleLeft {
   height: 100%;
   width: 40%;
@@ -533,10 +577,6 @@ header {
   height: 100%;
 }
 
-.headerContent nav ul li a.homeNav {
-  color: #50E3C2;
-}
-
 .titlePrefix {
   margin-left: 0.5rem;
 }
@@ -547,20 +587,21 @@ header {
 
 .titleSunglasses {
   background: url("../assets/header-box.jpg") center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   position: absolute;
-  left: -29rem;
+  left: -42rem;
   bottom: -6rem;
   height: 100%;
-  width: 38rem;
+  width: 48rem;
 }
 
 /* ======================
 INDEX - VISIT GUYANA
 =========================*/
 .visitGuyana {
-  background-color: #FAFFFE;
   padding-top: 9rem;
+  background-color: #FAFFFE;
 }
 
 .visitGuyanaContainer {
@@ -637,8 +678,8 @@ INDEX - THREE IMAGES
 INDEX - MIDPAGE
 =========================*/
 .midpage {
-  background-color: #FAFFFE;
   padding: 5rem 0;
+  background-color: #FAFFFE;
 }
 
 .midpageContainer {
@@ -664,14 +705,14 @@ INDEX - MIDPAGE
 }
 
 .midpageItems i {
-  background-color: #50E3C2;
-  color: #FAFFFE;
   position: relative;
   z-index: 1;
   border-radius: 50%;
   padding: 0.45rem;
   margin-top: 0.6rem;
   margin-right: 1rem;
+  background-color: #50E3C2;
+  color: #FAFFFE;
 }
 
 .midpageIconFile i {
@@ -681,7 +722,6 @@ INDEX - MIDPAGE
 
 .midpageIconFile i::after {
   content: "";
-  background-color: #50E3C2;
   position: absolute;
   top: 0;
   left: 0;
@@ -689,14 +729,15 @@ INDEX - MIDPAGE
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
+  background-color: #50E3C2;
 }
 
 /* ======================
 INDEX - PLAN AHEAD
 =========================*/
 .planAhead {
-  background-color: #D2F9F1;
   padding: 0;
+  background-color: #D2F9F1;
 }
 
 .planAheadContainer {
@@ -790,8 +831,8 @@ INDEX - BOTTOM SPAN IMAGE
 INDEX - FREE TRIP
 =========================*/
 .freeTrip {
-  background-color: #D2F9F1;
   height: 100%;
+  background-color: #D2F9F1;
 }
 
 .freeTripContainer {
@@ -824,8 +865,8 @@ INDEX - FREE TRIP
 FOOTER
 =========================*/
 footer {
-  background-color: #2C2C2C;
   color: #FAFFFE;
+  background-color: #2C2C2C;
 }
 
 footer p {
@@ -908,11 +949,13 @@ INDEX - MEDIA QUERIES
 
   .titlePrefix {
     font-size: 60px;
+    font-size: 3rem;
   }
 
   .titleLogo h1 {
     text-align: center;
     font-size: 90px;
+    font-size: 4.5rem;
   }
 
   .visitGuyana {
@@ -942,11 +985,14 @@ INDEX - MEDIA QUERIES
 
   .titlePrefix {
     font-size: 40px;
+    font-size: 2rem;
   }
 
   .titleLogo h1 {
     font-size: 60px;
+    font-size: 3rem;
     line-height: 60px;
+    line-height: 3rem;
   }
 
   .freeTripContainer h5 {
@@ -960,11 +1006,14 @@ INDEX - MEDIA QUERIES
 @media (max-width: 480px) {
   .titlePrefix {
     font-size: 30px;
+    font-size: 1.5rem;
   }
 
   .titleLogo h1 {
     font-size: 42px;
+    font-size: 2.1rem;
     line-height: 60px;
+    line-height: 3rem;
   }
 
   .threeImagesItems {
@@ -990,6 +1039,7 @@ CONTACT - HEADER
   background: url("../assets/contact-image-1.jpg") center;
   background-size: cover;
   height: 65vh;
+  min-height: 30rem;
 }
 
 .contact-header nav ul li a.homeNav {
@@ -998,10 +1048,6 @@ CONTACT - HEADER
 
 .contact-header nav ul li a.contactNav {
   color: #50E3C2;
-}
-
-.headerTitle h2 {
-  color: #FAFFFE;
 }
 
 /* ======================
@@ -1100,14 +1146,10 @@ CONTACT - LINKS
   margin: 1rem 0;
 }
 
-.contact-linksEmail a {
-  font-weight: 700;
-}
-
 /* ======================
 CONTACT - MEDIA QUERIES
 =========================*/
-@media (max-width: 958px) {
+@media (max-width: 962px) {
   .contact-formAndLinksContainer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1143,8 +1185,8 @@ CONTACT - MEDIA QUERIES
   }
 }
 @media (max-width: 768px) {
-  .general-cap {
-    line-height: 6rem;
+  .headerTitle h2 {
+    text-align: center;
   }
 
   .blog-ourMissionImgContainer {
@@ -1167,6 +1209,11 @@ CONTACT - MEDIA QUERIES
   }
 }
 @media (max-width: 480px) {
+  .headerTitle h2 {
+    font-size: 80px;
+    font-size: 4rem;
+  }
+
   .contact-formContainer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1200,6 +1247,7 @@ BLOG - HEADER
   background: url("../assets/blog-image-1.jpg") center;
   background-size: cover;
   height: 65vh;
+  min-height: 30rem;
 }
 
 .blog-header nav ul li a.homeNav {
@@ -1208,10 +1256,6 @@ BLOG - HEADER
 
 .blog-header nav ul li a.blogNav {
   color: #50E3C2;
-}
-
-.headerTitle h2 {
-  color: #FAFFFE;
 }
 
 /* ======================
@@ -1246,7 +1290,6 @@ BLOG - CONTAINER AND POST
 
 .blog-ImgContainer img {
   width: 100%;
-  max-width: 60rem;
   -webkit-box-shadow: 0.9rem 0.9rem #50E3C2;
           box-shadow: 0.9rem 0.9rem #50E3C2;
 }
@@ -1297,6 +1340,10 @@ BLOG - COMMENTS AND FORM
       -ms-flex: 1 0 5rem;
           flex: 1 0 5rem;
   margin-right: 2rem;
+}
+
+.blog-commentsText h6 {
+  margin-bottom: 0.3rem;
 }
 
 .blog-formContainer {
@@ -1370,8 +1417,8 @@ BLOG - OUR MISSION
 
 .blog-ourMissionPosts li::before {
   content: "•";
-  color: #50E3C2;
   margin: 0 0.5rem 0 -1.2rem;
+  color: #50E3C2;
 }
 
 /* ======================
@@ -1438,6 +1485,12 @@ BLOG - MEDIA QUERIES
   }
 }
 @media (max-width: 768px) {
+  .headerTitle h2 {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
   .blog-ourMissionImgContainer {
     height: 12rem;
   }
@@ -1461,24 +1514,7 @@ BLOG - MEDIA QUERIES
     height: 8rem;
   }
 }
-/* ======================
-MEDIA QUERIES
-=========================*/
-@media (max-width: 1350px) {
-  html {
-    background-color: red;
-  }
-}
-@media (max-width: 940px) {
-  html {
-    background-color: blue;
-  }
-}
 @media (max-width: 768px) {
-  html {
-    background-color: green;
-  }
-
   .fa-bars {
     visibility: visible;
   }
@@ -1502,9 +1538,14 @@ MEDIA QUERIES
     margin-left: 0;
   }
 
-  .headerLinks nav ul li:hover,
-.headerLinks nav ul li:focus {
+  .headerLinks li:hover,
+.headerLinks li:focus {
     background-color: #0C5F4C;
+  }
+
+  .headerLinks li a {
+    display: block;
+    width: 100%;
   }
 
   input[type=checkbox]:checked + .headerLinks {
@@ -1517,15 +1558,5 @@ MEDIA QUERIES
     position: fixed;
     right: 1rem;
     top: 1.1rem;
-  }
-}
-@media (max-width: 480px) {
-  html {
-    background-color: rebeccapurple;
-  }
-}
-@media (max-width: 340px) {
-  html {
-    background-color: orange;
   }
 }

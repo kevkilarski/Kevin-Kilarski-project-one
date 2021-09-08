@@ -6,6 +6,7 @@ BLOG - HEADER
     background: url("../assets/blog-image-1.jpg") center;
     background-size: cover;
     height: 65vh;
+    min-height: 30rem;
 }
 
 .blog-header nav ul li a.homeNav {
@@ -16,9 +17,6 @@ BLOG - HEADER
     color: #50E3C2;
 }
 
-.headerTitle h2 {
-    color: #FAFFFE;
-}
 
 /* ======================
 BLOG - CONTAINER AND POST
@@ -48,7 +46,6 @@ BLOG - CONTAINER AND POST
 
 .blog-ImgContainer img {
     width: 100%;
-    max-width: 60rem;
     box-shadow: 0.9rem 0.9rem #50E3C2;
 }
 
@@ -91,6 +88,10 @@ BLOG - COMMENTS AND FORM
 .blog-commentsImgContainer {
     flex: 1 0 5rem;
     margin-right: 2rem;
+}
+
+.blog-commentsText h6 {
+    margin-bottom: 0.3rem;
 }
 
 .blog-formContainer {
@@ -150,8 +151,8 @@ BLOG - OUR MISSION
 
 .blog-ourMissionPosts li::before {
     content: '\2022';
-    color: #50E3C2;
     margin: 0 0.5rem 0 -1.2rem;
+    color: #50E3C2;
 }
 
 
@@ -216,6 +217,12 @@ BLOG - MEDIA QUERIES
 }
 
 @media (max-width: 768px) {
+    .headerTitle h2 {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
     .blog-ourMissionImgContainer {
         height: 12rem;
     }

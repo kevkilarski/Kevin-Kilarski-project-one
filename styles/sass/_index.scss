@@ -1,5 +1,3 @@
-
-
 /* ======================
 INDEX - HEADER
 =========================*/
@@ -8,6 +6,19 @@ INDEX - HEADER
 
 .headerContent nav ul li a.homeNav {
     color: #50E3C2;
+}
+
+.titleLeft {
+    height: 100%;
+    width: 40%;
+}
+
+.titleLogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: 100%;
 }
 
 .titlePrefix {
@@ -20,12 +31,13 @@ INDEX - HEADER
 
 .titleSunglasses {
     background: url("../assets/header-box.jpg") center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     position: absolute;
-    left: -29rem;
+    left: -42rem;
     bottom: -6rem;
     height: 100%;
-    width: 38rem;
+    width: 48rem;
 }
 
 
@@ -34,8 +46,8 @@ INDEX - VISIT GUYANA
 =========================*/
 
 .visitGuyana {
-    background-color: #FAFFFE;
     padding-top: 9rem;
+    background-color: #FAFFFE;
 }
 
 .visitGuyanaContainer {
@@ -100,8 +112,8 @@ INDEX - MIDPAGE
 =========================*/
 
 .midpage {
-    background-color: #FAFFFE;
     padding: 5rem 0;
+    background-color: #FAFFFE;
 }
 
 .midpageContainer {
@@ -118,14 +130,14 @@ INDEX - MIDPAGE
 }
 
 .midpageItems i {
-    background-color: #50E3C2;
-    color: #FAFFFE;
     position: relative;
     z-index: 1;
     border-radius: 50%;
     padding: 0.45rem;
     margin-top: 0.6rem;
     margin-right: 1rem;
+    background-color: #50E3C2;
+    color: #FAFFFE;
 }
 
 .midpageIconFile i {
@@ -135,7 +147,6 @@ INDEX - MIDPAGE
 
 .midpageIconFile i::after {
     content: '';
-    background-color: #50E3C2;
     position: absolute;
     top: 0;
     left: 0;
@@ -143,6 +154,7 @@ INDEX - MIDPAGE
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
+    background-color: #50E3C2;
 }
 
 
@@ -151,8 +163,8 @@ INDEX - PLAN AHEAD
 =========================*/
 
 .planAhead {
-    background-color: #D2F9F1;
     padding: 0;
+    background-color: #D2F9F1;
 }
 
 .planAheadContainer {
@@ -232,8 +244,8 @@ INDEX - FREE TRIP
 =========================*/
 
 .freeTrip {
-    background-color: #D2F9F1;
     height: 100%;
+    background-color: #D2F9F1;
 }
 
 .freeTripContainer {
@@ -259,8 +271,8 @@ FOOTER
 =========================*/
 
 footer {
-    background-color: #2C2C2C;
     color: #FAFFFE;
+    background-color: #2C2C2C;
 }
 
 footer p {
@@ -323,34 +335,19 @@ INDEX - MEDIA QUERIES
     }
 }
 
-
-
-@media (max-width: 1287px) {
-    // html {
-    //     background-color: red;
-    // }
-
-    
-}
-
-
 @media (max-width: 940px) {
-    // html {
-    //     background-color: blue;
-    // }
-
     .titleLeft,
     .titleSunglasses {
         display: none;
     }
 
     .titlePrefix {
-        font-size: 60px;
+        @include fontSize(60);
     }
 
     .titleLogo h1 {
         text-align: center;
-        font-size: 90px;
+        @include fontSize(90);
     }
 
     .visitGuyana {
@@ -374,21 +371,17 @@ INDEX - MEDIA QUERIES
 
 
 @media (max-width: 768px) {
-    // html {
-    //     background-color: green;
-    // }
-
     .index-header {
         height: 60vh;
     }
 
     .titlePrefix {
-        font-size: 40px;
+        @include fontSize(40);
     }
 
     .titleLogo h1 {
-        font-size: 60px;
-        line-height: 60px;
+        @include fontSize(60);
+        @include lineHeight(60);
     }
 
     .freeTripContainer h5{
@@ -402,17 +395,13 @@ INDEX - MEDIA QUERIES
 
 
 @media (max-width: 480px) {
-    // html {
-    //     background-color: rebeccapurple;
-    // }
-
     .titlePrefix {
-        font-size: 30px;
+        @include fontSize(30);
     }
 
     .titleLogo h1 {
-        font-size: 42px;
-        line-height: 60px;
+        @include fontSize(42);
+        @include lineHeight(60);
     }
 
     .threeImagesItems {
@@ -430,11 +419,4 @@ INDEX - MEDIA QUERIES
     .planAheadText2 p {
         padding: 1.2rem 5%;
     }
-}
-
-
-@media (max-width: 340px) {
-    // html {
-    //     background-color: orange;
-    // }
 }

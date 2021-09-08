@@ -6,6 +6,7 @@ CONTACT - HEADER
     background: url("../assets/contact-image-1.jpg") center;
     background-size: cover;
     height: 65vh;
+    min-height: 30rem;
 }
 
 .contact-header nav ul li a.homeNav {
@@ -14,10 +15,6 @@ CONTACT - HEADER
 
 .contact-header nav ul li a.contactNav {
     color: #50E3C2;
-}
-
-.headerTitle h2 {
-    color: #FAFFFE;
 }
 
 
@@ -93,16 +90,12 @@ CONTACT - LINKS
     margin: 1rem 0;
 }
 
-.contact-linksEmail a {
-    font-weight: 700;
-}
-
 
 /* ======================
 CONTACT - MEDIA QUERIES
 =========================*/
 
-@media (max-width: 958px) {
+@media (max-width: 962px) {
     .contact-formAndLinksContainer {
         display: flex;
         flex-wrap: wrap;
@@ -130,8 +123,8 @@ CONTACT - MEDIA QUERIES
 }
 
 @media (max-width: 768px) {
-    .general-cap {
-        line-height: 6rem;
+    .headerTitle h2 {
+        text-align: center;
     }
 
     .blog-ourMissionImgContainer {
@@ -150,8 +143,11 @@ CONTACT - MEDIA QUERIES
     }
 }
 
-
 @media (max-width: 480px) {
+    .headerTitle h2 {
+        @include fontSize(80);
+    }
+
     .contact-formContainer {
         display: flex;
         flex-wrap: wrap;
