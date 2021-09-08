@@ -31,8 +31,8 @@ BLOG - MEDIA QUERIES
   .blog-ImgContainer img {
     width: 95%;
     max-width: 60rem;
-    -webkit-box-shadow: 0.9rem 0.9rem #50E3C2;
-            box-shadow: 0.9rem 0.9rem #50E3C2;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     margin: 0 auto;
   }
 
