@@ -1,3 +1,3 @@
-Project 1 by Kevin Kilarski
+Project 1 link:
 
 https://kevkilarski.github.io/Kevin-Kilarski-project-one/
