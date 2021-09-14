@@ -848,6 +848,14 @@ INDEX - FREE TRIP
   padding: 0.5rem 1rem;
 }
 
+.lightDarkMode {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  width: 7.2rem;
+  background: none;
+}
+
 /* ======================
 INDEX - MEDIA QUERIES
 =========================*/
