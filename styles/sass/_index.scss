@@ -286,36 +286,16 @@ INDEX - FREE TRIP
 INDEX - JS CLASSES
 =========================*/
 
-// .index-tintButton {
-//     padding: 0;
-//     margin: 0;
-//     text-align: left;
-//     width: 18rem;
-//     height: 14rem;
-//     background: none;
-//     color: white;
-// }
-
 .index-tintButton {
     position: relative;
     margin-right: 1rem;
-    color: white;
     z-index: 10;
-}
-
-.index-tintButtonBackground {
     cursor: pointer;
-    position: absolute;
-    top: -0.5rem;
-    left: -0.4rem;
-    width: 150%;
-    height: 110%;
-    border-radius: 50%;
-    background: rgba(255, 255, 0, 0.5);
+    color: yellow;
 }
 
-.noDisplay {
-    display: none;
+.index-tintButtonColour {
+    color: white;
 }
 
 .tintDark {
@@ -341,12 +321,31 @@ INDEX - JS CLASSES
     color: $iceBlue;
 }
 
+.noDisplay {
+    display: none;
+}
+
+// Media Queries for Javascript
+
+@media (max-width: 825px) {
+    .index-tintButton {
+        padding-top: 0.2rem;
+        margin-right: 0;
+    }
+}
+
 
 /* ======================
 INDEX - MEDIA QUERIES
 =========================*/
 
 @media (max-width: 1099px) {
+    .index-tintButtonBackground {
+        left: 10rem;
+        width: 100%;
+    }
+
+
     .index-planAheadContainer {
         flex-direction: column;
         padding: 0 5%;

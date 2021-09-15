@@ -1,3 +1,9 @@
+// Notes for Assignment 2
+    // 1. The main additions to the html begin on line 27 of the index.html file.
+    // 2. The main additions to the CSS begins on line 285 of the _index.scss partial.
+    // 3. I took inspiration for the use of a background tint and use of the background-blend-mode: multiply CSS property, from a slack overflow thread: https://stackoverflow.com/questions/12112746/how-can-i-tint-a-background-image-with-css/35177384
+
+
 /* ======================
 PSEUDOCODE
 =========================*/
@@ -54,13 +60,11 @@ button.addEventListener('click', function() {
         item.classList.toggle("tintFont");
     }
 
-    // Storing the lightbulb effect for the dark/light toggle button and toggling its inclusion on the page
-    const tintButtonBackground = document.querySelector('.index-tintButtonBackground');
-
-    tintButtonBackground.classList.toggle("noDisplay");
-    
     // Storing the lightbut button and changing the font awesome image according to the dark/light state
     const tintButton = document.querySelector('.index-tintButton');
+    
+    tintButton.classList.toggle("index-tintButtonColour");
+
     if (buttonToggle === 0) {
         tintButton.classList.add("far");
         tintButton.classList.remove("fas");
