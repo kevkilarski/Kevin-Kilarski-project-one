@@ -14,6 +14,8 @@ PSEUDOCODE
         // Use for of loops to cycle through variables that store multiple html elements
         // Toggle the appropriate class to create a dark/light mode style
     // Alternate the content of the Dark Mode/Light Mode element
+        // Use an if statement to toggle different font awesome images and set toggle in global variables
+        // Use toggle to apply a class to the light mode state
 
 
 /* ======================
@@ -22,6 +24,9 @@ CODE
 
 // Storing the html slements for the dark/light toggle button
 const button = document.querySelector('.index-tintButton');
+
+// Toggle for tint button effect
+buttonToggle = 0;
 
 // Using an event listener for a mouse click on the dark/light toggle button
 button.addEventListener('click', function() {
@@ -51,5 +56,18 @@ button.addEventListener('click', function() {
 
     // Storing the lightbulb effect for the dark/light toggle button and toggling its inclusion on the page
     const tintButtonBackground = document.querySelector('.index-tintButtonBackground');
+
     tintButtonBackground.classList.toggle("noDisplay");
+    
+    // Storing the lightbut button and changing the font awesome image according to the dark/light state
+    const tintButton = document.querySelector('.index-tintButton');
+    if (buttonToggle === 0) {
+        tintButton.classList.add("far");
+        tintButton.classList.remove("fas");
+        buttonToggle++;
+    } else {
+        tintButton.classList.add("fas");
+        tintButton.classList.remove("far");
+        buttonToggle--;
+    }
 })
