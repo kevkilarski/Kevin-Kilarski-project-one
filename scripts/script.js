@@ -1,7 +1,8 @@
 // Notes for Assignment 2
-    // 1. The main additions to the html begin on line 27 of the index.html file.
-    // 2. The main additions to the CSS begins on line 285 of the _index.scss partial.
-    // 3. I took inspiration for the use of a background tint and use of the background-blend-mode: multiply CSS property, from a slack overflow thread: https://stackoverflow.com/questions/12112746/how-can-i-tint-a-background-image-with-css/35177384
+    // 1. I have added a Dark/Light mode to the homepage of the Project 2 website.  A lightbulb icon has been added to the navigation bar at the top of the page, which serves as a button when clicked to switch between these modes.
+    // 2. The main additions to the html begin on line 27 of the index.html file.
+    // 3. The main additions to the CSS begins on line 285 of the _index.scss partial.
+    // 4. I took inspiration for the use of a background tint and use of the background-blend-mode: multiply CSS property, from a slack overflow thread: https://stackoverflow.com/questions/12112746/how-can-i-tint-a-background-image-with-css/35177384
 
 
 /* ======================
