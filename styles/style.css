@@ -563,6 +563,9 @@ INDEX - HEADER
   line-height: 100px;
   line-height: 5rem;
   z-index: 1;
+}
+
+.index-titleContainer {
   color: #063974;
 }
 
@@ -801,6 +804,7 @@ INDEX - PLAN AHEAD
   bottom: -1.5rem;
   width: 40rem;
   height: 20rem;
+  z-index: 10;
   -webkit-box-shadow: -0.9rem 0.9rem #50E3C2;
           box-shadow: -0.9rem 0.9rem #50E3C2;
 }
@@ -848,12 +852,55 @@ INDEX - FREE TRIP
   padding: 0.5rem 1rem;
 }
 
-.lightDarkMode {
-  padding: 0;
-  margin: 0;
-  text-align: left;
-  width: 7.2rem;
-  background: none;
+/* ======================
+INDEX - JS CLASSES
+=========================*/
+.index-tintButton {
+  position: relative;
+  margin-right: 1rem;
+  color: white;
+  z-index: 10;
+}
+
+.index-tintButtonBackground {
+  cursor: pointer;
+  position: absolute;
+  top: -0.5rem;
+  left: -0.4rem;
+  width: 150%;
+  height: 110%;
+  border-radius: 50%;
+  background: rgba(255, 255, 0, 0.5);
+}
+
+.noDisplay {
+  display: none;
+}
+
+.tintDark {
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+}
+
+.tintLight {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+}
+
+.tintImg {
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+}
+
+.tintSunglasses {
+  -webkit-filter: brightness(30%);
+          filter: brightness(30%);
+}
+
+.tintFont {
+  -webkit-filter: brightness(95%);
+          filter: brightness(95%);
+  color: #FAFFFE;
 }
 
 /* ======================

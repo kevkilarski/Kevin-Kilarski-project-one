@@ -32,6 +32,9 @@ INDEX - HEADER
 .index-titleContainer h1 {
     @include lineHeight(100);
     z-index: 1;
+}
+
+.index-titleContainer {
     color: $twilightBlue;
 }
 
@@ -236,6 +239,7 @@ INDEX - PLAN AHEAD
     bottom: -1.5rem;
     width: 40rem;
     height: 20rem;
+    z-index: 10;
     box-shadow: -0.9rem 0.9rem #50E3C2;
 }
 
@@ -278,14 +282,63 @@ INDEX - FREE TRIP
 }
 
 
+/* ======================
+INDEX - JS CLASSES
+=========================*/
 
+// .index-tintButton {
+//     padding: 0;
+//     margin: 0;
+//     text-align: left;
+//     width: 18rem;
+//     height: 14rem;
+//     background: none;
+//     color: white;
+// }
 
-.lightDarkMode {
-    padding: 0;
-    margin: 0;
-    text-align: left;
-    width: 7.2rem;
-    background: none;
+.index-tintButton {
+    position: relative;
+    margin-right: 1rem;
+    color: white;
+    z-index: 10;
+}
+
+.index-tintButtonBackground {
+    cursor: pointer;
+    position: absolute;
+    top: -0.5rem;
+    left: -0.4rem;
+    width: 150%;
+    height: 110%;
+    border-radius: 50%;
+    background: rgba(255, 255, 0, 0.5);
+}
+
+.noDisplay {
+    display: none;
+}
+
+.tintDark {
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+}
+
+.tintLight {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+
+.tintImg {
+    filter: brightness(70%);
+}
+
+.tintSunglasses {
+    filter: brightness(30%);
+}
+
+.tintFont {
+    filter: brightness(95%);
+    color: $iceBlue;
 }
 
 
