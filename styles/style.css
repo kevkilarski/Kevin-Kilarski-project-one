@@ -999,9 +999,9 @@ INDEX - MEDIA QUERIES
     margin-left: 0;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 825px) {
   .index-header {
-    height: 70vh;
+    height: 75vh;
   }
 
   .index-titlePrefix {

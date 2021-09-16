@@ -345,7 +345,6 @@ INDEX - MEDIA QUERIES
         width: 100%;
     }
 
-
     .index-planAheadContainer {
         flex-direction: column;
         padding: 0 5%;
@@ -421,9 +420,9 @@ INDEX - MEDIA QUERIES
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 825px) {
     .index-header {
-        height: 70vh;
+        height: 75vh;
     }
 
     .index-titlePrefix {
