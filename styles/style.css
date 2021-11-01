@@ -471,7 +471,7 @@ header {
 /* ======================
 MEDIA QUERIES
 =========================*/
-@media (max-width: 768px) {
+@media (max-width: 825px) {
   .fa-bars {
     visibility: visible;
   }
@@ -563,6 +563,9 @@ INDEX - HEADER
   line-height: 100px;
   line-height: 5rem;
   z-index: 1;
+}
+
+.index-titleContainer {
   color: #063974;
 }
 
@@ -801,6 +804,7 @@ INDEX - PLAN AHEAD
   bottom: -1.5rem;
   width: 40rem;
   height: 20rem;
+  z-index: 10;
   -webkit-box-shadow: -0.9rem 0.9rem #50E3C2;
           box-shadow: -0.9rem 0.9rem #50E3C2;
 }
@@ -849,9 +853,65 @@ INDEX - FREE TRIP
 }
 
 /* ======================
+INDEX - JS CLASSES
+=========================*/
+.index-tintButton {
+  position: relative;
+  margin-right: 1rem;
+  z-index: 10;
+  cursor: pointer;
+  color: yellow;
+}
+
+.index-tintButtonColour {
+  color: white;
+}
+
+.tintDark {
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+}
+
+.tintLight {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+}
+
+.tintImg {
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+}
+
+.tintSunglasses {
+  -webkit-filter: brightness(30%);
+          filter: brightness(30%);
+}
+
+.tintFont {
+  -webkit-filter: brightness(95%);
+          filter: brightness(95%);
+  color: #FAFFFE;
+}
+
+.noDisplay {
+  display: none;
+}
+
+@media (max-width: 825px) {
+  .index-tintButton {
+    padding-top: 0.2rem;
+    margin-right: 0;
+  }
+}
+/* ======================
 INDEX - MEDIA QUERIES
 =========================*/
 @media (max-width: 1099px) {
+  .index-tintButtonBackground {
+    left: 10rem;
+    width: 100%;
+  }
+
   .index-planAheadContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -939,9 +999,9 @@ INDEX - MEDIA QUERIES
     margin-left: 0;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 825px) {
   .index-header {
-    height: 70vh;
+    height: 75vh;
   }
 
   .index-titlePrefix {
